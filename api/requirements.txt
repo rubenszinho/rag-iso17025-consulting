@@ -1,0 +1,30 @@
+﻿# Sistema RAG para Consultoria em Qualidade Laboratorial
+# Dependências essenciais
+
+# Framework web e API
+streamlit>=1.28.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# Processamento de linguagem natural e embeddings
+sentence-transformers>=2.2.0
+transformers>=4.35.0
+torch>=2.0.0
+
+# Vector store e busca semântica
+faiss-cpu>=1.7.4
+langchain>=0.0.350
+langchain-community>=0.0.10
+
+# Modelo de linguagem
+openai>=1.3.0
+
+# Utilitários essenciais
+python-dotenv>=1.0.0
+requests>=2.31.0
+numpy>=1.24.0
+tqdm>=4.66.0
+pydantic>=2.0.0
+
+# Processamento de dados
+pandas>=2.0.0

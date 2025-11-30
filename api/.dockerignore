@@ -1,0 +1,19 @@
+# API Service .dockerignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.env.local
+.venv/
+venv/
+ENV/
+*.egg-info/
+.git/
+.gitignore
+*.md
+.pytest_cache/
+.coverage
+htmlcov/
+iso17025_faiss_qwen/

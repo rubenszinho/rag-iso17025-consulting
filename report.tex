@@ -1,0 +1,244 @@
+\documentclass[12pt]{arti\begin\begin{resumo} 
+  Os Sistemas de Recuperação Aumentada por Geração (RAGs) representam uma abordagem inovadora que combina busca semântica com geração de texto para produzir respostas fundamentadas em documentos específicos. Este trabalho demonstra a aplicação prática de um protótipo RAG no cenário de consultoria técnica em qualidade laboratorial, utilizando como base documental a norma ISO/IEC 17025:2017. O sistema indexa os requisitos normativos, permite consultas em linguagem natural e produz respostas contextualizadas citando as seções relevantes, oferecendo uma ferramenta eficiente para consultores e gestores de laboratórios.
+\end{resumo>stract}
+  Sistemas de Recuperação Aumentada por Geração (RAGs) combinam técnicas de busca de informação com modelos de linguagem para gerar respostas fundamentadas em documentos reais. Este trabalho apresenta o desenvolvimento de um assistente inteligente baseado em RAG aplicado ao cenário de consultoria em qualidade laboratorial, utilizando a norma ABNT NBR ISO/IEC 17025:2017 como base documental. O sistema permite consultas em linguagem natural sobre requisitos normativos, recuperando automaticamente os trechos mais relevantes e produzindo respostas contextualizadas com citações diretas dos documentos fonte.
+\end{abstract>}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}  
+
+     
+\sloppy
+
+\title{Assistente RAG para Consultoria em Qualidade Laboratorial:\\ Aplicação em Documentos Normativos ISO 17025}
+
+\author{Samuel Rubens Souza Oliveira{1}}
+
+
+\address{Universidade de São Paulo\\
+  São Carlos -- SP -- Brasil
+  \email{otaviocoletti@usp.com}
+}
+
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+  A norma ABNT NBR ISO/IEC 17025:2017 estabelece os requisitos gerais para a competência de laboratórios de ensaio e calibração. Este trabalho apresenta o desenvolvimento de um agente de Inteligência Artificial baseado em RAG (Retrieval-Augmented Generation) projetado para auxiliar auditores internos e gestores da qualidade na interpretação e aplicação dos requisitos da ISO/IEC 17025. O agente busca os itens mais pertinentes à pergunta do usuário no documento da norma, oferecendo respostas contextualizadas com referências diretas aos itens normativos pertinentes.
+\end{abstract}
+     
+\begin{resumo} 
+  A norma ABNT NBR ISO/IEC 17025:2017 estabelece os requisitos gerais para a competência de laboratórios de ensaio e calibração, abrangendo princípios de imparcialidade, rastreabilidade metrológica, gestão da informação e garantia da validade dos resultados. Este trabalho apresenta o desenvolvimento de um agente de Inteligência Artificial baseado em RAG (Retrieval-Augmented Generation) projetado para auxiliar auditores internos e gestores da qualidade na interpretação e aplicação dos requisitos da ISO/IEC 17025. A motivação principal é reduzir a complexidade e o tempo de preparação de auditorias, garantindo maior consistência nas interpretações e recomendações.
+\end{resumo}
+
+
+\section{Cenário de Aplicação e Objetivos}
+
+\subsection{Contextualização do Problema}
+
+Sistemas de Recuperação Aumentada por Geração (RAGs) combinam técnicas de busca de informação com modelos de linguagem para gerar respostas fundamentadas em documentos reais. Essa abordagem é amplamente utilizada em diversos setores, incluindo atendimento ao cliente, análise de relatórios, suporte técnico e análise de documentos especializados.
+
+\subsection{Cenário Escolhido: Consultoria em Qualidade Laboratorial}
+
+O cenário de aplicação escolhido é a \textbf{consultoria técnica em qualidade laboratorial}, especificamente focado na interpretação e aplicação de requisitos normativos. Consultores e gestores de qualidade frequentemente precisam:
+
+\begin{itemize}
+\item Interpretar requisitos complexos da ISO/IEC 17025:2017
+\item Responder rapidamente a dúvidas técnicas de clientes
+\item Fornecer orientações precisas com base documental
+\item Garantir consistência nas recomendações técnicas
+\end{itemize}
+
+\subsection{Objetivos do Protótipo}
+
+Este trabalho demonstra o desenvolvimento de um assistente inteligente baseado em RAG que:
+
+\begin{enumerate}
+\item \textbf{Indexa documentos normativos}: Processa e organiza o conteúdo da ISO/IEC 17025 em uma base vetorial
+\item \textbf{Permite consultas naturais}: Aceita perguntas em linguagem natural sobre requisitos técnicos
+\item \textbf{Recupera informações relevantes}: Identifica automaticamente os trechos mais pertinentes à consulta
+\item \textbf{Produz respostas fundamentadas}: Gera explicações claras citando as seções específicas dos documentos fonte
+\end{enumerate}
+
+A motivação principal é demonstrar como sistemas RAG podem transformar a consulta a documentos técnicos complexos, oferecendo acesso eficiente e fundamentado ao conhecimento especializado.
+
+\section{Coleção de Documentos e Preparação da Base}
+
+\subsection{Seleção da Base Documental}
+
+Para este protótipo, foi selecionada uma coleção focada composta por:
+
+\begin{itemize}
+\item \textbf{Documento principal}: ABNT NBR ISO/IEC 17025:2017 - Requisitos gerais para a competência de laboratórios de ensaio e calibração (156 seções estruturadas)
+\item \textbf{Seções abordadas}: Requisitos gerais (Seção 4), requisitos estruturais (Seção 5), requisitos de recursos (Seção 6), requisitos de processo (Seção 7) e requisitos do sistema de gestão (Seção 8)
+\end{itemize}
+
+\subsection{Processamento e Indexação}
+
+A base documental foi processada seguindo as etapas:
+
+\begin{enumerate}
+\item \textbf{Estruturação}: Cada requisito foi identificado por ID, título (número da seção) e texto completo
+\item \textbf{Geração de embeddings}: Utilização do modelo Qwen3 0.6B para converter os textos em representações vetoriais semânticas
+\item \textbf{Armazenamento}: Indexação na vector store FAISS para busca eficiente por similaridade de cosseno
+\item \textbf{Recuperação}: Sistema de busca pelos K itens mais similares à consulta do usuário
+\end{enumerate}
+
+\section{Arquitetura do Protótipo RAG}
+
+\subsection{Fluxo de Funcionamento}
+
+O assistente segue a arquitetura típica de sistemas RAG, implementada em quatro etapas principais:
+
+\begin{enumerate}
+\item \textbf{Entrada da consulta}: O usuário formula uma pergunta em linguagem natural sobre qualidade laboratorial (exemplo: "Quais são os requisitos para calibração de equipamentos?")
+
+\item \textbf{Recuperação semântica}: O sistema:
+   \begin{itemize}
+   \item Converte a pergunta em embedding vetorial
+   \item Calcula similaridade de cosseno com a base indexada
+   \item Recupera os K documentos mais relevantes (seções da norma)
+   \end{itemize}
+
+\item \textbf{Geração aumentada}: O modelo de linguagem:
+   \begin{itemize}
+   \item Recebe a pergunta original e os documentos recuperados
+   \item Sintetiza uma resposta fundamentada no conteúdo encontrado
+   \item Mantém citações diretas aos requisitos específicos
+   \end{itemize}
+
+\item \textbf{Apresentação da resposta}: Saída estruturada contendo:
+   \begin{itemize}
+   \item Resposta clara e contextualizada
+   \item Citações das seções relevantes da norma
+   \item Referências aos números dos requisitos consultados
+   \end{itemize}
+\end{enumerate}
+
+\subsection{Exemplo de Estrutura Interna de Requisitos Convertidos do JSON}
+
+O texto original da norma foi transformado em um formato JSON contendo cada requisito identificado por um id, título (correspondente ao número do subitem da norma) e texto (conteúdo descritivo do requisito). A Tabela 1 apresenta um exemplo desse mapeamento entre os campos estruturados e o conteúdo da ABNT NBR ISO/IEC 17025:2017.
+
+\begin{table}[ht]
+\centering
+\caption{Exemplo de estrutura JSON convertida para LaTeX.}
+\label{tab:json_structure}
+\begin{tabular}{|c|c|p{8cm}|}
+\hline
+\textbf{ID} & \textbf{Título} & \textbf{Texto do Requisito} \\
+\hline
+4 & 4.1.1 & As atividades de laboratório devem ser realizadas com imparcialidade e ser estruturadas e gerenciadas de forma a salvaguardar a imparcialidade. \\
+\hline
+5 & 4.1.2 & A gerência do laboratório deve ser comprometida com a imparcialidade. \\
+\hline
+6 & 4.1.3 & O laboratório deve ser responsável pela imparcialidade de suas atividades de laboratório e não pode permitir que pressões comerciais, financeiras ou outras comprometam a imparcialidade. \\
+\hline
+7 & 4.1.4 & O laboratório deve identificar os riscos à sua imparcialidade de forma contínua. Isto deve incluir os riscos decorrentes de suas atividades, de seus relacionamentos ou dos relacionamentos de seu pessoal. Entretanto, estes relacionamentos não necessariamente apresentam ao laboratório um risco à imparcialidade. \\
+\hline
+8 & 4.1.5 & Caso um risco à imparcialidade seja identificado, o laboratório deve ser capaz de demonstrar como ele elimina ou minimiza tal risco. \\
+\hline
+\end{tabular}
+\end{table}
+
+O agente RAG armazena os requisitos dessa forma para permitir uma recuperação semântica eficiente. Assim, quando o auditor faz uma pergunta sobre imparcialidade, o sistema localiza automaticamente os itens 4.1.1 a 4.1.5 e fornece respostas fundamentadas nesses trechos, com citações diretas da norma.
+
+\section{Demonstração Prática do Protótipo}
+
+\subsection{Interface do Sistema}
+
+O protótipo foi desenvolvido como uma aplicação Streamlit, oferecendo uma interface web simples e intuitiva para consultores e gestores de laboratório.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.8\textwidth]{interface.jpg}
+\caption{Interface do assistente RAG para consultoria em qualidade laboratorial.}
+\label{fig:interface}
+\end{figure}
+
+\subsection{Exemplos de Consultas Reais}
+
+Para validar o funcionamento do sistema, foram realizados testes com consultas típicas do cenário de consultoria laboratorial. A Tabela 2 apresenta exemplos de perguntas reais e as respectivas respostas geradas pelo sistema. 
+
+\begin{table}[ht]
+\centering
+\caption{Demonstração do sistema: consultas reais e respostas geradas.}
+\label{tab:evaluation}
+\begin{tabular}{|p{5cm}|p{9cm}|}
+\hline
+\textbf{Consulta do Usuário} & \textbf{Resposta do Sistema RAG} \\
+\hline
+"Quais procedimentos são obrigatórios segundo a norma?" & \textbf{Documentos recuperados}: Seções 6.2.5, 7.1.1, 7.4.1, 7.9.1. \textbf{Resposta}: A norma ISO/IEC 17025 exige procedimentos documentados para: análise crítica de pedidos e contratos (7.1.1), gestão de pessoal incluindo determinação de competência, seleção, treinamento e supervisão (6.2.5), manuseio de itens de ensaio (7.4.1), e tratamento de reclamações (7.9.1). \textbf{Avaliação}: Resposta precisa com citações corretas. \\
+\hline
+"Com que frequência devo realizar ensaios interlaboratoriais?" & \textbf{Documentos recuperados}: Seções 7.7.1, 7.7.2, 7.7.3. \textbf{Resposta}: Conforme seção 7.7.2, a norma não especifica frequência exata para ensaios interlaboratoriais. O laboratório deve estabelecer monitoramento planejado de seu desempenho através de comparações com outros laboratórios, podendo incluir ensaios de proficiência ou comparações interlaboratoriais distintas. A escolha das atividades deve ser baseada na disponibilidade e adequação ao contexto. \textbf{Avaliação}: Resposta precisa e bem fundamentada. \\
+\hline
+"Por quanto tempo devo reter registros de ensaio?" & \textbf{Documentos recuperados}: Seções 7.5.1, 7.5.2, 8.4.1. \textbf{Resposta}: A norma não especifica prazo de retenção, mas exige que registros técnicos sejam mantidos para demonstrar conformidade e permitir rastreabilidade (7.5.1). O laboratório deve estabelecer período adequado considerando requisitos contratuais, legais e necessidades de rastreabilidade. \textbf{Avaliação}: Resposta correta, poderia ser mais específica sobre aspectos práticos. \\
+\hline
+"Onde encontro informações sobre manuseio de amostras?" & \textbf{Documentos recuperados}: Seções 7.4.1, 7.4.2, 7.4.3. \textbf{Resposta}: O manuseio de itens de ensaio é abordado na seção 7.4. O item 7.4.1 estabelece requisitos para transporte, recebimento, manuseio, proteção, armazenamento e descarte, incluindo proteção da integridade e prevenção de contaminação. \textbf{Avaliação}: Resposta direta e precisa. \\
+\hline
+"Qual a diferença entre trabalho não conforme e não conformidade?" & \textbf{Documentos recuperados}: Seções 7.10.1, 8.7.1. \textbf{Resposta}: Trabalho não conforme (7.10) refere-se a atividades ou resultados que não atendem aos procedimentos estabelecidos ou requisitos acordados. Não conformidade é um conceito mais amplo relacionado a falhas sistemáticas que podem gerar trabalhos não conformes, exigindo ações corretivas (8.7). \textbf{Avaliação}: Distinção conceitual clara e bem explicada. \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Análise de Potencialidades e Limitações}
+
+\subsection{Potencialidades Demonstradas}
+
+O protótipo RAG desenvolvido apresenta características promissoras para consultoria técnica:
+
+\begin{itemize}
+\item \textbf{Acesso eficiente}: Consultas em linguagem natural eliminam a necessidade de navegação manual em documentos extensos
+\item \textbf{Respostas fundamentadas}: Todas as informações são respaldadas por citações diretas dos documentos fonte
+\item \textbf{Consistência}: Reduz variabilidade nas interpretações técnicas entre diferentes consultores
+\item \textbf{Escalabilidade}: Pode processar rapidamente múltiplas consultas simultâneas
+\item \textbf{Rastreabilidade}: Mantém referências claras aos requisitos normativos consultados
+\end{itemize}
+
+\subsection{Limitações Identificadas}
+
+Durante os testes, foram observadas algumas limitações:
+
+\begin{itemize}
+\item \textbf{Contexto limitado}: Base documental restrita a uma única norma (ISO 17025)
+\item \textbf{Interpretação complexa}: Dificuldades com requisitos que exigem correlação entre múltiplas seções
+\item \textbf{Conhecimento tácito}: Não incorpora experiência prática de consultores experientes
+\item \textbf{Atualizações}: Necessidade de reprocessamento quando há revisões normativas
+\end{itemize}
+
+\subsection{Trabalhos Futuros}
+
+Para aprimorar o sistema, propõem-se as seguintes expansões:
+
+\begin{enumerate}
+\item \textbf{Ampliação da base}: Integração de outras normas relevantes (ISO 9001, ISO 14001, OHSAS 18001)
+\item \textbf{RAG hierárquico}: Busca em múltiplos níveis (seções → subseções → requisitos específicos)
+\item \textbf{Personalização}: Interface configurável para diferentes perfis de usuário
+\item \textbf{Base de casos}: Incorporação de exemplos práticos e casos de aplicação real
+\end{enumerate}
+
+\section{Conclusões}
+
+Este trabalho demonstrou com sucesso a aplicação de sistemas RAG no cenário de consultoria técnica em qualidade laboratorial. O protótipo desenvolvido comprova que é possível combinar recuperação semântica com geração de linguagem natural para criar ferramentas eficazes de consulta a documentos normativos complexos.
+
+A abordagem RAG mostrou-se especialmente valiosa para democratizar o acesso ao conhecimento técnico especializado, oferecendo respostas fundamentadas e rastreáveis que podem apoiar tanto consultores experientes quanto profissionais em formação na área de qualidade laboratorial.
+
+\section{Referências}
+
+\begin{thebibliography}{99}
+
+\bibitem{iso17025}
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. ABNT NBR ISO/IEC 17025:2017: Requisitos gerais para a competência de laboratórios de ensaio e calibração. Rio de Janeiro: ABNT, 2017.
+
+\bibitem{rag}
+LEWIS, P. et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. In: Advances in Neural Information Processing Systems 33 (NeurIPS 2020), 2020.
+
+\bibitem{faiss}
+JOHNSON, J.; DOUZE, M.; JÉGOU, H. Billion-scale similarity search with GPUs. IEEE Transactions on Big Data, v. 7, n. 3, p. 535-547, 2019.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  # FastAPI RAG API Server
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: rag-api
+    ports:
+      - "${API_PORT:-8000}:8000"
+    env_file:
+      - ./api/.env
+    volumes:
+      # Persist vector store to avoid recreation
+      - vector_store:/app/iso17025_faiss_qwen
+    restart: unless-stopped
+    networks:
+      - rag-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Streamlit Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: rag-frontend
+    ports:
+      - "${FRONTEND_PORT:-8501}:8501"
+    env_file:
+      - ./frontend/.env
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - rag-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+networks:
+  rag-network:
+    driver: bridge
+
+volumes:
+  vector_store:

@@ -1,0 +1,922 @@
+[
+  {
+    "id": 0,
+    "titulo": "3.8 verificação",
+    "texto": "fornecimento de evidência objetiva de que um dado item atende a requisitos especificados\nEXEMPLO 1 Confirmação de que um dado material de referência, como declarado, é homogêneo para o valor e para o procedimento de medição em questão, até uma porção do material sob medição, com massa de 10 mg .\nEXEMPLO 2 Confirmação de que as propriedades relativas ao desempenho ou aos requisitos legais são satisfeitas para um sistema de medição.\nEXEMPLO 3 Confirmação de que uma incerteza-alvo pode ser obtida.\nNota 1 de entrada: Quando aplicável, recomenda-se que a incerteza de medição seja levada em consideração.\nNota 2 de entrada: O item pode ser, por exemplo, um processo, um procedimento de medição, um material, um composto ou um sistema de medição.\nNota 3 de entrada: Os requisitos especificados podem ser, por exemplo, as especificações de um fabricante.\nNota 4 de entrada: Em metrologia legal, a verificação, conforme definida no VIML, e geralmente na avaliação da conformidade, compreende o exame e a marcação e/ou a emissão de um certificado de verificação para um sistema de medição.\nNota 5 de entrada: Não convém que a verificação seja confundida com calibração. Nem toda verificação é uma validação (3.9).\nNota 6 de entrada: Em química, a verificação da identidade de uma entidade, ou de uma atividade, necessita de uma descrição da estrutura ou das propriedades daquela entidade ou atividade.\n[ABNT ISO/IEC Guia 99:2014, 2.44]"
+  },
+  {
+    "id": 1,
+    "titulo": "3.9 validação",
+    "texto": "verificação (3.8) na qual os requisitos especificados são adequados para um uso pretendido\nEXEMPLO Um procedimento de medição, habitualmente utilizado para a medição da concentração mássica de nitrogênio em água, pode também ser validado para a medição da concentração mássica de nitrogênio no soro humano.\n[ABNT ISO/IEC Guia 99:2014, 2.45]"
+  },
+  {
+    "id": 2,
+    "titulo": "4 Requisitos gerais",
+    "texto": ""
+  },
+  {
+    "id": 3,
+    "titulo": "4.1 Imparcialidade",
+    "texto": ""
+  },
+  {
+    "id": 4,
+    "titulo": "4.1.1",
+    "texto": "As atividades de laboratório devem ser realizadas com imparcialidade e ser estruturadas e gerenciadas de forma a salvaguardar a imparcialidade."
+  },
+  {
+    "id": 5,
+    "titulo": "4.1.2",
+    "texto": "A gerência do laboratório deve ser comprometida com a imparcialidade."
+  },
+  {
+    "id": 6,
+    "titulo": "4.1.3",
+    "texto": "O laboratório deve ser responsável pela imparcialidade de suas atividades de laboratório e não pode permitir que pressões comerciais, financeiras ou outras comprometam a imparcialidade."
+  },
+  {
+    "id": 7,
+    "titulo": "4.1.4",
+    "texto": "O laboratório deve identificar os riscos à sua imparcialidade de forma contínua. Isto deve incluir os riscos decorrentes de suas atividades, de seus relacionamentos ou dos relacionamentos de seu pessoal. Entretanto, estes relacionamentos não necessariamente apresentam ao laboratório um risco à imparcialidade.\nNOTA Um relacionamento que ameaça a imparcialidade do laboratório pode ser baseado em propriedade, governança, gestão, pessoal, recursos compartilhados, finanças, contratos, marketing (incluindo promoção de marcas) e pagamento de comissões de vendas ou outros benefícios pela indicação de novos clientes etc."
+  },
+  {
+    "id": 8,
+    "titulo": "4.1.5",
+    "texto": "Caso um risco à imparcialidade seja identificado, o laboratório deve ser capaz de demonstrar como ele elimina ou minimiza tal risco."
+  },
+  {
+    "id": 9,
+    "titulo": "4.2 Confidencialidade",
+    "texto": ""
+  },
+  {
+    "id": 10,
+    "titulo": "4.2.1",
+    "texto": "O laboratório deve ser responsável, por meio de compromissos legalmente exigíveis, pela gestão de todas as informações obtidas ou criadas durante a realização de atividades de laboratório. O laboratório deve informar previamente ao cliente as informações que pretende colocar em domínio público. Exceto para informações que o cliente disponibilize ao público, ou quando acordado entre o laboratório e o cliente (por exemplo, com o propósito de responder a reclamações), todas as outras informações são consideradas propriedade do cliente e devem ser tratadas como confidenciais."
+  },
+  {
+    "id": 11,
+    "titulo": "4.2.2",
+    "texto": "Quando o laboratório for obrigado por lei ou autorizado por compromissos contratuais a divulgar informações confidenciais, o cliente ou o indivíduo interessado deve, exceto se proibido por lei, ser notificado sobre as informações fornecidas."
+  },
+  {
+    "id": 12,
+    "titulo": "4.2.3",
+    "texto": "Informações sobre o cliente, obtidas de outras fontes que não o próprio cliente (por exemplo, reclamante, autoridades regulamentadoras), devem ser tratadas como confidenciais entre o cliente e o laboratório. O fornecedor (fonte) destas informações deve ser tratado pelo laboratório como confidencial e não pode ser compartilhado com o cliente, exceto se acordado com a fonte."
+  },
+  {
+    "id": 13,
+    "titulo": "4.2.4",
+    "texto": "O pessoal, incluindo quaisquer membros de comitês, contratados, pessoal de organismos externos ou indivíduos atuando em nome do laboratório, deve manter confidenciais todas as informações obtidas ou geradas durante a realização das atividades de laboratório, exceto quando exigido por lei."
+  },
+  {
+    "id": 14,
+    "titulo": "5 Requisitos de estrutura",
+    "texto": ""
+  },
+  {
+    "id": 15,
+    "titulo": "5.1",
+    "texto": "O laboratório deve ser uma entidade legal, ou uma parte definida de uma entidade legal, que seja legalmente responsável por suas atividades de laboratório.\nNOTA Para os efeitos deste documento, um laboratório governamental é considerado uma entidade legal com base em sua condição governamental."
+  },
+  {
+    "id": 16,
+    "titulo": "5.2",
+    "texto": "O laboratório deve identificar a gerência que tenha responsabilidade geral pelo laboratório."
+  },
+  {
+    "id": 17,
+    "titulo": "5.3",
+    "texto": "O laboratório deve definir e documentar o conjunto de atividades de laboratório para as quais está em conformidade com este documento. O laboratório somente deve declarar a conformidade com este documento para este conjunto de atividades de laboratório, o que exclui as atividades de laboratório providas externamente de forma contínua."
+  },
+  {
+    "id": 18,
+    "titulo": "5.4",
+    "texto": "As atividades de laboratório devem ser realizadas de modo a atender aos requisitos deste documento, dos clientes do laboratório, das autoridades regulamentadoras e organizações que fornecem reconhecimento. Isso deve incluir as atividades de laboratório realizadas em todas as suas instalações permanentes, em locais fora das suas instalações permanentes, em instalações associadas temporárias ou móveis, ou nas instalações de um cliente."
+  },
+  {
+    "id": 19,
+    "titulo": "5.5",
+    "texto": "O laboratório deve:\na) definir a estrutura organizacional e gerencial do laboratório, o seu lugar na organização principal e as relações entre a gerência, as operações técnicas e os serviços de apoio;\nb) especificar a responsabilidade, a autoridade e o inter-relacionamento de todo o pessoal que gerencia, realiza ou verifica trabalhos que afetem os resultados das atividades de laboratório;\nc) documentar seus procedimentos na extensão necessária para assegurar a aplicação consistente de suas atividades de laboratório e a validade dos resultados."
+  },
+  {
+    "id": 20,
+    "titulo": "5.6",
+    "texto": "O laboratório deve ter pessoal que, independentemente de outras responsabilidades, tenha a autoridade e os recursos necessários para realizar seus deveres, incluindo:\na) a implementação, manutenção e melhoria do sistema de gestão;\nb) a identificação de desvios do sistema de gestão ou dos procedimentos para a realização das atividades de laboratório;\nc) o início de ações para evitar ou minimizar tais desvios;\nd) o relato à gerência do laboratório sobre o desempenho do sistema de gestão e qualquer necessidade de melhoria;\ne) a garantia da eficácia das atividades de laboratório."
+  },
+  {
+    "id": 21,
+    "titulo": "5.7",
+    "texto": "A gerência do laboratório deve assegurar que:\na) haja comunicação a respeito da eficácia do sistema de gestão e sobre a (mportância de atender) aos requisitos dos clientes e outros requisitos;\nb) a integridade do sistema de gestão seja mantida quando forem planejadas e implementadas mudanças no sistema de gestão."
+  },
+  {
+    "id": 22,
+    "titulo": "6 Requisitos de recursos",
+    "texto": ""
+  },
+  {
+    "id": 23,
+    "titulo": "6.1 Generalidades",
+    "texto": "O laboratório deve dispor de pessoal, instalações, equipamentos, sistemas e serviços de apoio necessários para gerenciar e realizar suas atividades de laboratório."
+  },
+  {
+    "id": 24,
+    "titulo": "6.2 Pessoal",
+    "texto": ""
+  },
+  {
+    "id": 25,
+    "titulo": "6.2.1",
+    "texto": "Todo o pessoal do laboratório, interno ou externo, que possa influenciar as atividades de laboratório, deve agir com imparcialidade, ser competente e trabalhar de acordo com o sistema de gestão do laboratório."
+  },
+  {
+    "id": 26,
+    "titulo": "6.2.2",
+    "texto": "O laboratório deve documentar os requisitos de competência para cada função que influencie os resultados das atividades de laboratório, incluindo os requisitos de tormação, qualiticação, treinamento, conhecimento técnico, habilidades e experiência."
+  },
+  {
+    "id": 27,
+    "titulo": "6.2.3",
+    "texto": "O laboratório deve assegurar que o pessoal tenha competência para realizar as atividades de laboratório pelas quais é responsavel e para avalıar a importancıa dos desvios."
+  },
+  {
+    "id": 28,
+    "titulo": "6.2.4",
+    "texto": "A gerência do laboratório deve comunicar ao pessoal seus deveres, responsabilidades e autoridades."
+  },
+  {
+    "id": 29,
+    "titulo": "6.2.5",
+    "texto": "O laboratório deve ter procedimento(s) e reter registros para:\na) determinação dos requisitos de competência;\nb) seleção de pessoal;\nc) treinamento de pessoal;\nd) supervisão de pessoal;\ne) autorização de pessoal;\nf) monitoramento da competência de pessoal."
+  },
+  {
+    "id": 30,
+    "titulo": "6.2.6",
+    "texto": "O laboratório deve autorizar pessoal para realizar atividades de laboratório específicas, incluindo, mas não se limitando ao seguinte:\na) desenvolvimento, modificação, verificação e validação de métodos;\nb) análise de resultados, incluindo declarações de conformidade ou opiniões e interpretações;\nc) relato, análise crítica e autorização de resultados."
+  },
+  {
+    "id": 31,
+    "titulo": "6.3 Instalações e condições ambientais",
+    "texto": ""
+  },
+  {
+    "id": 32,
+    "titulo": "6.3.1",
+    "texto": "As instalações e as condições ambientais devem ser adequadas às atividades de laboratório e não podem afetar adversamente a validade dos resultados.\nNOTA Influências que podem afetar adversamente a validade dos resultados podem incluir, mas não estão limitadas a, contaminação microbiológica, poeira, distúrbios eletromagnéticos, radiação, umidade, alimentação elétrica, temperatura, some evitraçao."
+  },
+  {
+    "id": 33,
+    "titulo": "6.3.2",
+    "texto": "Os requisitos para as instalações e condições ambientais necessários à realização das atividades de laboratório devem estar documentados."
+  },
+  {
+    "id": 34,
+    "titulo": "6.3.3",
+    "texto": "O laboratório deve monitorar, controlar e registrar as condições ambientais de acordo com as especificações, métodos ou procedimentos pertinentes, ou quando estes influenciarem a validade dos resultados."
+  },
+  {
+    "id": 35,
+    "titulo": "6.3.4",
+    "texto": "Medidas para controlar as instalações devem ser implementadas, monitoradas e periodicamente submetidas à anátise critica, e devem incluir, mas nao estar limitadas a:\na) acesso e uso de áreas que afetem as atividades de laboratório;\nb) prevenção de contaminação, interferência ou influências adversas nas atividades de laboratório;\nc) separação efetiva entre áreas com atividades de laboratório incompatíveis."
+  },
+  {
+    "id": 36,
+    "titulo": "6.3.5",
+    "texto": "Quando o laboratório realizar atividades de laboratório em locais ou instalações fora do seu controle permanente, o laboratório deve assegurar que os requisitos relacionados às instalações e às condições ambientais deste documento sejam atendidos."
+  },
+  {
+    "id": 37,
+    "titulo": "6.4 Equipamentos",
+    "texto": ""
+  },
+  {
+    "id": 38,
+    "titulo": "6.4.1",
+    "texto": "O laboratório deve ter acesso aos equipamentos (incluindo, mas não se limitando a, instrumentos de medição, software, padrões de medição, materiais de referência, dados de referência, reagentes, consumíveis ou aparelhos auxiliares) que são requeridos para a correta realização das atividades de laboratório e que possam influenciar o resultado.\nNOTA 1 Existe uma multiplicidade de nomes para materiais de referência e materiais de referência certificados, incluindo padrões de referência, padrões de calibração, materiais de referência-padrão e materiais de controle da qualidade. A ABNT NBR ISO 17034 contém informações adicionais sobre produtores de materiais de referência (PMR). Os PMR que atendem aos requisitos da ABNT NBR ISO 17034 são considerados competentes. Os materiais de referência provenientes de PMR que atendam aos requisitos da ABNT NBR ISO 17034 são fornecidos com uma ficha de informação do produto/certificado que especifica, entre outras características, homogeneidade e estabilidade para as propriedades especificadas e, para os materiais de referência certificados, as propriedades especificadas com valores certificados, suas incertezas de medição e rastreabilidade metrológica associadas.\nNOTA 2 O ISO Guide 33 fornece orientação para seleção e uso de materiais de referência. O ISO Guide 80 fornece orientação para produção interna de materiais para controle da qualidade."
+  },
+  {
+    "id": 39,
+    "titulo": "6.4.2",
+    "texto": "Quando o laboratório utilizar equipamentos que estejam fora de seu controle permanente, o laboratório deve assegurar que sejam atendidos os requisitos para equipamentos deste documento."
+  },
+  {
+    "id": 40,
+    "titulo": "6.4.3",
+    "texto": "O laboratório deve ter um procedimento para manuseio, transporte, armazenamento, uso e) manutenção planejada dos equipamentos, a fim de assegurar seu correto funcionamento e para evitar contaminação ou deterioração."
+  },
+  {
+    "id": 41,
+    "titulo": "6.4.4",
+    "texto": "O laboratório deve verificar se os equipamentos estão em conformidade com os requisitos especificados antes de serem colocados ou recolocados em serviço."
+  },
+  {
+    "id": 42,
+    "titulo": "6.4.5",
+    "texto": "Os equipamentos utilizados para medição devem ser capazes de alcançar a exatidão de medição e/ou a incerteza de medição requeridas para fornecer um resultado válido."
+  },
+  {
+    "id": 43,
+    "titulo": "6.4.6",
+    "texto": "Os equipamentos de medição devem ser calibrados quando:\na) a exatidão de medição ou a incerteza de medição afetar a validade dos resultados relatados; e/ou\nb) a calibração do equipamento for requerida para estabelecer a rastreabilidade metrológica dos resultados relatados.\nNOTA Tipos de equipamentos que afetam a validade dos resultados relatados podem incluir:\naqueles utilizados para a medição direta do mensurando, por exemplo, utilização de uma balança para realizar uma medição de massa;\naqueles utilizados para fazer correções do valor medido, por exemplo, medições de temperatura;\naqueles utilizados para obter um resultado de medição calculado a partir de múltiplas grandezas."
+  },
+  {
+    "id": 44,
+    "titulo": "6.4.7",
+    "texto": "O laboratório deve estabelecer um programa de calibração, o qual deve ser analisado criticamente e ajustado conforme necessário, a fim de manter a confiança na situação de calibração."
+  },
+  {
+    "id": 45,
+    "titulo": "6.4.8",
+    "texto": "Todo equipamento que necessite de calibração ou que tenha um período de validade definido deve ser etiquetado, codificado ou identificado de alguma outra forma que permita que o usuário do equipamento identifique prontamente a situação de calibração ou o período de validade."
+  },
+  {
+    "id": 46,
+    "titulo": "6.4.9",
+    "texto": "Deve ser retirado de serviço o equipamento que tenha sido submetido à sobrecarga, ou que tenha sido manuseado incorretamente, que produza resultados questionáveis ou que mostre ter defeitos ou estar fora dos requisitos especificados. O equipamento deve ser isolado para evitar sua utilização, ou deve ser claramente etiquetado ou marcado como fora de serviço, até que tenha sido verificado que está funcionando corretamente. O laboratório deve examinar o efeito deste defeito ou desvio dos requisitos especificados, e deve iniciar o procedimento de gestão de trabalho não conforme (ver 7.10)."
+  },
+  {
+    "id": 47,
+    "titulo": "6.4.10",
+    "texto": "Quando forem necessárias checagens intermediárias para manter a confiança no desempenho do equipamento, estas checagens devem ser realizadas de acordo com um procedimento."
+  },
+  {
+    "id": 48,
+    "titulo": "6.4.11",
+    "texto": "Quando dados de calibração e de material de referência incluírem valores de referência ou fatores de correção, o laboratório deve assegurar que os valores de referência e os fatores de correção sejam atualizados e implementados, conforme apropriado, para atender aos requisitos especificados."
+  },
+  {
+    "id": 49,
+    "titulo": "6.4.12",
+    "texto": "O laboratório deve tomar medidas viáveis para evitar que ajustes não intencionais no equipamento invalidem os resultados."
+  },
+  {
+    "id": 50,
+    "titulo": "6.4.13",
+    "texto": "Devem ser retidos registros de equipamentos que possam influenciar as atividades de laboratório. Os registros devem incluir o seguinte, quando aplicável:\na) nome do equipamento, incluindo o software e a versão do firmware;\nb) nome do fabricante, identificação do modelo e número de série ou outra identificação unívoca;\nc) evidência de verificação de que o equipamento está conforme com os requisitos especificados;\nd) localização atual;\ne) datas das calibrações, resultados de calibrações, ajustes, critérios de aceitação e data prevista da próxima calibração ou intervalo de calibração;\nf) documentação de materiais de referência, resultados, critérios de aceitação, datas pertinentes e período de validade;\ng) plano de manutenção e manutenções realizadas até o momento, quando pertinente para o desempenho do equipamento;\nh) detalhes de qualquer dano, mau funcionamento, modificação ou reparo do equipamento."
+  },
+  {
+    "id": 51,
+    "titulo": "6.5 Rastreabilidade metrológica",
+    "texto": ""
+  },
+  {
+    "id": 52,
+    "titulo": "6.5.1",
+    "texto": "O laboratório deve estabelecer e manter a rastreabilidade metrológica dos seus resultados de medição, por meio de uma cadeia ininterrupta e documentada de calibrações, cada uma contribuindo para a incerteza de medição, relacionando-os a uma referência apropriada.\nNOTA 1 No ABNT ISO/IEC Guia 99, rastreabilidade metrológica é definida como a \"propriedade de um resultado de medição pela qual tal resultado pode ser relacionado a uma referência por meio de uma cadeia ininterrupta e documentada de calibrações, cada uma contribuindo para a incerteza de medição\".\nNOTA 2 Ver Anexo A para informações adicionais sobre rastreabilidade metrológica."
+  },
+  {
+    "id": 53,
+    "titulo": "6.5.2",
+    "texto": "O laboratório deve assegurar que os resultados de medição sejam rastreáveis ao Sistema Internacional de Unidades (SI) por meio de:\na) calibração provida por um laboratório competente; ou;\nNOTA 1 Os laboratórios que atendem aos requisitos deste documento são considerados competentes.\nb) valores certificados de materiais de referência certificados, providos por um produtor competente, com declaração de rastreabilidade metrológica ao SI; ou\nNOTA 2 Os produtores de material de referência que atendem aos requisitos da ABNT NBR ISO 17034 são considerados competentes.\nc) realização direta das unidades do SI que seja assegurada por comparação, direta ou indiretamente, com padrões nacionais ou internacionais.\nNOTA 3 Detalhes sobre a realização prática das definições de algumas das unidades importantes são fornecidos na SI Brochure."
+  },
+  {
+    "id": 54,
+    "titulo": "6.5.3",
+    "texto": "Quando a rastreabilidade metrológica às unidades do SI não for tecnicamente possível, o laboratório deve demonstrar a rastreabilidade metrológica a uma referência apropriada, por exemplo:\na) valores certificados de materiais de referência certificados, providos por um produtor competente;\nb) resultados de procedimentos de medição de referência, métodos especificados ou normas de consenso que sejam claramente descritas e aceitas como meio de fornecer resultados de medição adequados ao uso pretendido e assegurados por comparação adequada."
+  },
+  {
+    "id": 55,
+    "titulo": "6.6 Produtos e serviços providos externamente",
+    "texto": ""
+  },
+  {
+    "id": 56,
+    "titulo": "6.6.1",
+    "texto": "O laboratório deve assegurar que sejam utilizados somente produtos e serviços adequados, providos externamente, que afetem as atividades de laboratório, quando tais produtos e serviços:\na) forem destinados à incorporação nas atividades do próprio laboratório;\nb) forem providos, em parte ou por completo, diretamente ao cliente pelo laboratório, conforme recebidos do provedor externo;\nc) forem utilizados para apoiar a operação do laboratório.\nNOTA Produtos podem incluir, por exemplo, padrões e equipamentos de medição, equipamentos auxiliares, materiais de consumo e materiais de referência. Serviços podem incluir, por exemplo, serviços de calibração, serviços de amostragem, serviços de ensaios, serviços de manutenção de instalações e equipamentos, serviços de ensaios de proficiência e serviços de avaliação e de auditoria."
+  },
+  {
+    "id": 57,
+    "titulo": "6.6.2",
+    "texto": "O laboratório deve ter um procedimento e reter registros para:\na) definir, analisar criticamente e aprovar os requisitos do laboratório para produtos e serviços providos externamente;\nb) definir os critérios para avaliação, seleção, monitoramento do desempenho e reavaliação dos provedores externos;\nc) assegurar que os produtos e serviços providos externamente estejam em conformidade com os requisitos estabelecidos pelo laboratório ou, quando aplicável, com os requisitos pertinentes deste documento, antes de serem utilizados ou diretamente providos ao cliente;\nd) tomar quaisquer ações decorrentes de avaliações, monitoramentos do desempenho e reavaliações dos provedores externos."
+  },
+  {
+    "id": 58,
+    "titulo": "6.6.3",
+    "texto": "O laboratório deve comunicar aos provedores externos os seus requisitos para:\na) os produtos e serviços a serem providos;\nb) os critérios de aceitação;\nc) competência, incluindo qualquer qualificação requerida do pessoal;\nd) atividades que o laboratório, ou seu cliente, pretenda realizar nas instalações do provedor externo."
+  },
+  {
+    "id": 59,
+    "titulo": "7 Requisitos de processo",
+    "texto": ""
+  },
+  {
+    "id": 60,
+    "titulo": "7.1 Análise crítica de pedidos, propostas e contratos",
+    "texto": ""
+  },
+  {
+    "id": 61,
+    "titulo": "7.1.1",
+    "texto": "O laboratório deve ter um procedimento para a análise crítica dos pedidos, propostas e contratos. O procedimento deve assegurar que:\na) os requisitos sejam adequadamente definidos, documentados e entendidos;\nb) o laboratório tenha a capacidade e os recursos para atender aos requisitos;\nc) quando forem utilizados provedores externos, os requisitos de 6.6 sejam aplicados e o laboratório informe ao cliente as atividades de laboratório específicas a serem realizadas pelo provedor externo, e obtenha a aprovação do cliente;\nNOTA 1 É reconhecido que atividades de laboratório providas externamente podem ocorrer quando:\no laboratório tem os recursos e a competência para realizar as atividades, entretanto, por razões imprevistas é incapaz de realizá-las em parte ou por completo;\no laboratório não tem os recursos ou a competência para realizar as atividades.\nd) sejam selecionados os métodos ou procedimentos apropriados e capazes de atender aos requisitos dos clientes.\nNOTA 2 Para clientes internos ou rotineiros, a análise crítica de pedidos, propostas e contratos pode ser realizada de forma simplificada."
+  },
+  {
+    "id": 62,
+    "titulo": "7.1.2",
+    "texto": "O laboratório deve informar ao cliente quando o método solicitado pelo cliente for considerado não apropriado ou desatualizado."
+  },
+  {
+    "id": 63,
+    "titulo": "7.1.3",
+    "texto": "Quando o cliente solicitar uma declaração de conformidade a uma especificação ou norma para o ensaio ou calibração (por exemplo: aprovação/reprovação, dentro da tolerância/fora da tolerância), a especificação ou norma e a regra de decisão devem ser claramente definidas. A regra de decisão selecionada deve ser comunicada e acordada com o cliente, a não ser que a regra de decisão seja inerente à norma ou especificação solicitada.\nNOTA Para orientações adicionais sobre declarações de conformidade, ver ISO/IEC Guide 98-4."
+  },
+  {
+    "id": 64,
+    "titulo": "7.1.4",
+    "texto": "Quaisquer diferenças entre o pedido ou proposta e o contrato devem ser resolvidas antes do início das atividades de laboratório. Cada contrato deve ser aceito tanto pelo laboratório como pelo cliente. Desvios solicitados pelo cliente não podem afetar a integridade do laboratório ou a validade dos resultados."
+  },
+  {
+    "id": 65,
+    "titulo": "7.1.5",
+    "texto": "O cliente deve ser informado de qualquer desvio do contrato."
+  },
+  {
+    "id": 66,
+    "titulo": "7.1.6",
+    "texto": "Se um contrato for modificado depois de o trabalho ter sido iniciado, a análise crítica do contrato deve ser repetida e qualquer emenda deve ser comunicada a todo o pessoal afetado."
+  },
+  {
+    "id": 67,
+    "titulo": "7.1.7",
+    "texto": "O laboratório deve cooperar com os clientes ou seus representantes para esclarecer o pedido do cliente e para monitorar o desempenho do laboratório em relação ao trabalho realizado.\nNOTA Tal cooperação pode incluir:\na) disponibilização de acesso razoável às áreas pertinentes do laboratório para presenciar as atividades de laboratório específicas do cliente;\nb) preparação, embalagem e envio de itens necessários ao cliente para fins de verificação."
+  },
+  {
+    "id": 68,
+    "titulo": "7.1.8",
+    "texto": "Devem ser retidos registros das análises críticas, incluindo quaisquer modificações significativas. Devem também ser retidos registros de discussões pertinentes com um cliente, relacionadas aos seus requisitos ou aos resultados das atividades de laboratório."
+  },
+  {
+    "id": 69,
+    "titulo": "7.2 Seleção, verificação e validação de métodos",
+    "texto": ""
+  },
+  {
+    "id": 70,
+    "titulo": "7.2.1 Seleção e verificação de métodos",
+    "texto": ""
+  },
+  {
+    "id": 71,
+    "titulo": "7.2.1.1",
+    "texto": "O laboratório deve utilizar métodos e procedimentos adequados para todas as atividades de laboratório e, quando apropriado, para a avaliação da incerteza de medição, bem como técnicas estatísticas para análise de dados.\nNOTA O termo \"método\", utilizado neste documento, pode ser considerado sinônimo do termo \"procedimento de medição\", conforme definido no ABNT ISO/IEC Guia 99."
+  },
+  {
+    "id": 72,
+    "titulo": "7.2.1.2",
+    "texto": "Todos os métodos, procedimentos e documentação de apoio, como instruções, normas, manuais e dados de referência pertinentes para as atividades de laboratório, devem ser mantidos atualizados e devem estar prontamente disponíveis ao pessoal (ver 8.3)."
+  },
+  {
+    "id": 73,
+    "titulo": "7.2.1.3",
+    "texto": "O laboratório deve assegurar a utilização da última versão válida de um método, a não sel que isto não seja apropriado ou possível. Quando necessário, a aplicação do método deve ser suplementada com detalhes adicionais para assegurar uma aplicação consistente.\nNOTA Normas internacionais, regionais ou nacionais, ou outras especificações reconhecidas que contenham informações suficientes e concisas sobre como realizar atividades de laboratório, não precisam ser suplementadas ou reescritas como procedimentos internos, se estas normas estiverem escritas de forma que possam ser utilizadas pelo pessoal operacional em um laboratório. Pode ser necessário fornecer documentação adicional para etapas opcionais no método ou detalhes adicionais."
+  },
+  {
+    "id": 74,
+    "titulo": "7.2.1.4",
+    "texto": "Quando o cliente não especificar o método a ser utilizado, o laboratório deve selecionar um método apropriado e informar ao cliente o método escolhido. São recomendados métodos publicados em normas internacionais, regionais ou nacionais, ou por organizações técnicas respeitáveis ou em textos ou periódicos científicos pertinentes, ou conforme especificado pelo fabricante do equipamento. Também podem ser utilizados métodos desenvolvidos ou modificados pelo laboratório."
+  },
+  {
+    "id": 75,
+    "titulo": "7.2.1.5",
+    "texto": "O laboratório deve verificar se é capaz de realizar métodos adequadamente, antes de implantá-los, assegurando que possa alcançar o desempenho requerido. Devem ser retidos registros da verificação. Se o método for revisado pelo órgão emitente, a verificação deve ser repetida na extensão necessária."
+  },
+  {
+    "id": 76,
+    "titulo": "7.2.1.6",
+    "texto": "Quando o desenvolvimento de um método for requerido, isto deve ser uma atividade planejada que deve ser designada ao pessoal competente e equipado com recursos adequados. À medida que avança o desenvolvimento do método, deve ser realizada análise crítica periódica para confirmar se as necessidades do cliente continuam sendo atendidas. Quaisquer modificações no plano de desenvolvimento devem ser aprovadas e autorizadas.."
+  },
+  {
+    "id": 77,
+    "titulo": "7.2.1.7",
+    "texto": "Desvios de métodos para todas as atividades de laboratório somente devem ocorrer se o desvio estiver documentado, tecnicamente justificado, autorizado e aceito pelo cliente.\nNOTA A aceitação de desvios pelo cliente pode ser previamente acordada no contrato."
+  },
+  {
+    "id": 78,
+    "titulo": "7.2.2 Validação de métodos",
+    "texto": ""
+  },
+  {
+    "id": 79,
+    "titulo": "7.2.2.1",
+    "texto": "O laboratório deve validar métodos não normalizados, métodos desenvolvidos pelo laboratório e métodos normalizados utilizados fora de seu escopo pretendido ou modificados de outra forma. A validação deve ser tão abrangente quanto for necessária para atender às necessidades de uma determinada aplicação ou campo de aplicação\nNOTA 1 A validação pode incluir procedimentos para amostragem, manuseio e transporte de itens de ensaio ou calibração.\nNOTA 2 As técnicas utilizadas para a validação de método podem ser uma das seguintes ou uma combinação destas:\na) calibração ou avaliação da tendência e precisão utilizando padrões de referência ou materiais de referência;\nb) avaliação sistemática dos fatores que influenciam o resultado;\nc) ensaio de robustez do método por meio da variação de parâmetros controlados, como temperatura de incubação, volume dispensado;\nd) comparação com resultados obtidos por outros métodos validados;\ne) comparações interlaboratoriais;\nf) avaliação da incerteza de medição dos resultados com base na compreensão sobre os princípios teóricos do método e na experiência prática com o desempenho do método de amostragem ou ensaio."
+  },
+  {
+    "id": 80,
+    "titulo": "7.2.2.2",
+    "texto": "Quando forem feitas alterações em métodos validados, deve ser determinada a influência destas mudanças e, quando estas afetarem a validação original, deve ser realizada uma nova validação do método."
+  },
+  {
+    "id": 81,
+    "titulo": "7.2.2.3",
+    "texto": "As características de desempenho dos métodos validados, conforme avaliadas para o uso pretendido, devem ser pertinentes às necessidades dos clientes e consistentes com os requisitos especificados.\nNOTA Características de desempenho podem incluir, mas não estão limitadas a, faixa de medição, exatidão de medição, incerteza de medição dos resultados, limite de detecção, limite de quantificação, seletividade do método, linearidade, repetibilidade ou reprodutibilidade, robustez contra influências externas ou sensibilidade cruzada contra interferência da matriz da amostra ou objeto de ensaio e tendência."
+  },
+  {
+    "id": 82,
+    "titulo": "7.2.2.4",
+    "texto": "O laboratório deve reter os seguintes registros de validação:\na) procedimento de validação utilizado;\nb) especificação dos requisitos;\nc) determinação das características de desempenho dos métodos;\nd) resultados obtidos;\ne) uma declaração sobre a validade do método, detalhando sua adequação ao uso pretendido."
+  },
+  {
+    "id": 83,
+    "titulo": "7.3 Amostragem",
+    "texto": ""
+  },
+  {
+    "id": 84,
+    "titulo": "7.3.1",
+    "texto": "O laboratório deve ter um plano e um método de amostragem, quando realiza amostragem de substâncias, materiais ou produtos para ensaio ou calibração subsequente. O método de amostragem deve abordar os fatores a serem controlados, para assegurar a validade dos resultados de ensaio e calibração subsequentes. O plano e o método de amostragem devem estar disponíveis no local onde a amostragem for realizada. Planos de amostragem devem, sempre que razoável, ser baseados em métodos estatísticos apropriados."
+  },
+  {
+    "id": 85,
+    "titulo": "7.3.2",
+    "texto": "O método de amostragem deve descrever:\na) a seleção de amostras ou locais,\nb) o plano de amostragem,\nc) a preparação e o tratamento de amostra(s) de uma substância, material ou produto para produzir o item requerido para ensaio ou calibração subsequente.\nNOTA Uma vez recebida no laboratório, a amostra pode requerer manuseio adicional, conforme especificado em 7.4."
+  },
+  {
+    "id": 86,
+    "titulo": "7.3.3",
+    "texto": "O laboratório deve reter registros dos dados da amostragem que fazem parte do ensaio ou calibração que for realizado. Estes registros devem incluir, quando pertinente:\na) referência ao método de amostragem utilizado;\nb) data e hora da amostragem;\nc) dados para identificar e descrever a amostra (por exemplo, número, quantidade, nome);\nd) identificação do pessoal que realizou a amostragem;\ne) identificação do equipamento utilizado;\nf) condições ambientais ou de transporte;\ng) diagramas ou outros meios equivalentes para identificar o local da amostragem, quando apropriado;\nh) desvios, adições ou exclusões do método de amostragem e do plano de amostragem."
+  },
+  {
+    "id": 87,
+    "titulo": "7.4 Manuseio de itens de ensaio ou calibração",
+    "texto": ""
+  },
+  {
+    "id": 88,
+    "titulo": "7.4.1",
+    "texto": "O laboratório deve ter um procedimento para o transporte, recebimento, manuseio, proteção, armazenamento, retenção e descarte ou retorno dos itens de ensaio ou calibração, incluindo todas as providências necessárias para a proteção da integridade do item de ensaio ou calibração e para a proteção dos interesses do laboratório e do cliente. Devem ser tomadas precauções para evitar deterioração, contaminação, perda ou dano no item durante o manuseio, transporte, armazenamento/ espera e preparação para ensaio ou calibração. As instruções para manuseio fornecidas com o item devem ser seguidas."
+  },
+  {
+    "id": 89,
+    "titulo": "7.4.2",
+    "texto": "O laboratório deve ter um sistema para a identificação não ambígua de itens de ensaio ou calibração. A identificação deve ser retida enquanto o item estiver sob a responsabilidade do laboratório. O sistema deve assegurar que os itens não serão confundidos fisicamente ou quando forem citados em registros ou outros documentos. O sistema deve, se apropriado, contemplar uma subdivisão de um item ou grupos de itens e a transferência de itens."
+  },
+  {
+    "id": 90,
+    "titulo": "7.4.3",
+    "texto": "No ato do recebimento do item de ensaio ou calibração, devem ser registrados os desvios das condições especificadas. Quando houver dúvidas sobre a adequação de um item para ensaio ou calibração, ou quando um item não estiver em conformidade com a descrição fornecida, o laboratório deve consultar o cliente para obter instruções adicionais antes de prosseguir, e deve registrar os resultados desta consulta. Quando o cliente requerer que o item seja ensaiado ou calibrado admitindo um desvio das condições especificadas, o laboratório deve incluir uma ressalva no relatório, indicando quais resultados podem estar afetados pelo desvio."
+  },
+  {
+    "id": 91,
+    "titulo": "7.4.4",
+    "texto": "Quando os itens tiverem que ser armazenados ou acondicionados sob condições ambientais especificadas, estas condições devem ser mantidas, monitoradas e registradas."
+  },
+  {
+    "id": 92,
+    "titulo": "7.5 Registros técnicos",
+    "texto": ""
+  },
+  {
+    "id": 93,
+    "titulo": "7.5.1",
+    "texto": "O laboratório deve assegurar que os registros técnicos para cada atividade de laboratório contenham os resultados, o relatório e as informações suficientes para facilitar, se possível, a identificação de fatores que afetem o resultado de medição e sua incerteza de medição associada, bem como para possibilitar que a atividade de laboratório seja repetida em condições o mais próximo possível das condições originais. Os registros técnicos devem incluir a data e a identificação do pessoal responsável por cada atividade de laboratório e pela conferência dos dados e resultados. Observações, dados e cálculos originais devem ser registrados no momento em que são realizados e devem ser identificáveis à tarefa específica a que se referem."
+  },
+  {
+    "id": 94,
+    "titulo": "7.5.2",
+    "texto": "O laboratório deve assegurar que emendas aos registros técnicos possam ser vinculadas às versões anteriores ou às observações originais. Devem ser retidos os dados e arquivos, originais e alterados, incluindo a data da alteração, uma indicação dos aspectos alterados e o pessoal responsável pelas alterações."
+  },
+  {
+    "id": 95,
+    "titulo": "7.6 Avaliação da incerteza de medição",
+    "texto": ""
+  },
+  {
+    "id": 96,
+    "titulo": "7.6.1",
+    "texto": "Os laboratórios devem identificar as contribuições para a incerteza de medição. Ao avaliar a incerteza de medição, todas as contribuições que sejam significativas, incluindo aquelas oriundas da amostragem, devem ser consideradas utilizando-se métodos de análise apropriados."
+  },
+  {
+    "id": 97,
+    "titulo": "7.6.2",
+    "texto": "Um laboratório que realiza calibrações, incluindo as de seus próprios equipamentos, deve avaliar a incerteza de medição para todas as calibrações."
+  },
+  {
+    "id": 98,
+    "titulo": "7.6.3",
+    "texto": "Um laboratório que realiza ensaio deve avaliar a incerteza de medição Quando o método de ensaio impossibilitar uma avaliação rigorosa da incerteza de medição, deve ser feita uma estimativa baseada na compreensão dos princípios teóricos do método ou na experiência prática sobre o desempenho do método.\nNOTA 1 Nos casos em que um método de ensaio bem reconhecido especificar limites para os valores das principais fontes de incerteza de medição e especificar a forma de apresentação dos resultados calculados, considera-se que o laboratório atende a 7.6.3 ao seguir o método de ensaio e as instruções para relato.\nNOTA 2 Para um método em particular no qual a incerteza de medição dos resultados foi estabelecida e verificada, não há necessidade de avaliar a incerteza de medição para cada resultado, caso o laboratório possa demonstrar que os fatores de influência identificados como críticos estejam sob controle.\nNOTA 3 Para informações adicionais, ver ABNT ISO/IEC Guia 98-3, ISO 21748 e a série ISO 5725."
+  },
+  {
+    "id": 99,
+    "titulo": "7.7 Garantia da validade dos resultados",
+    "texto": ""
+  },
+  {
+    "id": 100,
+    "titulo": "7.7.1",
+    "texto": "O laboratório deve ter um procedimento para monitorar a validade dos resultados. Os dados resultantes devem ser registrados de forma que as tendências sejam detectáveis e, quando praticável, devem ser aplicadas técnicas estatísticas para a análise crítica dos resultados. Este monitoramento deve ser planejado e analisado criticamente e deve incluir, quando apropriado, mas não estar limitado a:\na) utilização de materiais de referência ou de materiais para controle da qualidade;\nb) utilização de instrumentação alternativa calibrada para fornecer resultados rastreáveis;\nc) checagens funcionais de equipamentos de medição e ensaio;\nd) uso de padrões de checagem ou padrões de trabalho com cartas de controle, quando aplicável;\ne) checagens intermediárias nos equipamentos de medição;\nf) ensaios ou calibrações replicadas, utilizando-se os mesmos métodos ou métodos diferentes;\ng) reensaio ou recalibração de itens retidos;\nh) correlação de resultados de características diferentes de um item;\ni) análise crítica de resultados relatados;\nj) comparações intralaboratoriais;\nk) ensaio de amostra(s) cega(s)."
+  },
+  {
+    "id": 101,
+    "titulo": "7.7.2",
+    "texto": "O laboratório deve monitorar o seu desempenho por meio de comparação com resultados de outros laboratórios, quando disponível e apropriado. Este monitoramento deve ser planejado e analisado criticamente deve incluir, mas não estar limitado a, uma ou as duas alternativas a seguir:\na) participação em ensaio de proficiência;\nNOTA A ABNT NBR ISO/IEC 17043 contém informações adicionais sobre ensaios de proficiência e provedores de ensaios de proficiência. Provedores de ensaios de proficiência que atendem aos requisitos da ABNT NBR ISO/IEC 17043 são considerados competentes.\nb) participação em comparações interlaboratoriais distintas de ensaios de proficiência."
+  },
+  {
+    "id": 102,
+    "titulo": "7.7.3",
+    "texto": "Os dados das atividades de monitoramento devem ser analisados, utilizados para controlar as atividades do laboratório e, se aplicável, para melhorá-las. Se os resultados das análises dos dados das atividades de monitoramento estiverem fora dos critérios predefinidos, devem ser tomadas ações apropriadas para evitar o relato de resultados incorretos."
+  },
+  {
+    "id": 103,
+    "titulo": "7.8 Relato de resultados",
+    "texto": ""
+  },
+  {
+    "id": 104,
+    "titulo": "7.8.1 Generalidades",
+    "texto": ""
+  },
+  {
+    "id": 105,
+    "titulo": "7.8.1.1",
+    "texto": "Os resultados devem ser analisados criticamente e autorizados antes de sua liberação."
+  },
+  {
+    "id": 106,
+    "titulo": "7.8.1.2",
+    "texto": "Os resultados devem ser fornecidos com exatidão, clareza, objetividade, sem ambiguidade, normalmente em um relatório (por exemplo, relatório de ensaio ou certificado de calibração ou relatório de amostragem), e devem incluir todas as informações acordadas com o cliente e necessárias para a interpretação dos resultados e todas as informações requeridas pelo método utilizado. Todos os relatórios emitidos devem ser retidos como registros técnicos.\nNOTA 1 Para os efeitos deste documento, relatórios de ensaio e certificados de calibração são, algumas vezes, denominados, respectivamente, certificados de ensaio e relatórios de calibração.\nNOTA 2 Os relatórios podem ser emitidos tanto na forma impressa quanto por meios eletrônicos, desde que os requisitos deste documento sejam atendidos."
+  },
+  {
+    "id": 107,
+    "titulo": "7.8.1.3",
+    "texto": "Quando acordado com o cliente, os resultados podem ser relatados de forma simplificada. Quaisquer informações listadas em 7.8.2 a 7.8.7 que não forem relatadas ao cliente devem estar prontamente disponíveis."
+  },
+  {
+    "id": 108,
+    "titulo": "7.8.2 Requisitos comuns para relatórios (ensaio, calibração ou amostragem)",
+    "texto": ""
+  },
+  {
+    "id": 109,
+    "titulo": "7.8.2.1",
+    "texto": "Cada relatório deve incluir pelo menos as seguintes informações, a menos que o laboratório tenha razões válidas para não fazer isso, minimizando assim qualquer possibilidade de mal-entendido ou uso indevido:\na) um título (por exemplo, \"Relatório de Ensaio\", \"Certificado de Calibração\" ou \"Relatório deAmostragem\");\nb) nome e endereço do laboratório;\nc) local da realização das atividades de laboratório, inclusive quando realizadas nas instalações de cliente ou em locais fora das instalações permanentes do laboratório, ou em instalações associadas temporárias ou móveis;\nd) identificação unívoca de forma que todos os seus componentes sejam reconhecidos como parte do relatório completo e uma clara identificação do final do relatório;\ne) nome e informações de contato do cliente;\nf) identificação do método utilizado;\ng) uma descrição, identificação não ambígua e, quando necessário, condição do item;\nh) data do recebimento do(s) item(s) de ensaio ou de calibração, e data da amostragem, quando isso for crítico para a validade e aplicação dos resultados;\ni) data(s) da realização da atividade de laboratório;\nj) data da emissão do relatório;\nk) referência ao plano de amostragem e ao método de amostragem utilizados pelo laboratório ou por outros organismos, quando estes forem pertinentes para a validade ou aplicação dos resultados;\nl) uma declaração de que os resultados se referem somente aos itens ensaiados, calibrados ou amostrados;\nm) resultados com, quando apropriado, as unidades de medida;\nn) adições, desvios ou exclusões em relação ao método;\no) identificação da(s) pessoa(s) que autoriza(m) o relatório;\np) quando os resultados forem de provedores externos, uma identificação clara sobre isso.\nNOTA A inclusão de uma declaração especificando que o relatório não pode ser reproduzido sem a aprovação do laboratório, exceto se for reproduzido na íntegra, pode fornecer uma garantia de que partes de um relatório não sejam utilizadas fora de contexto."
+  },
+  {
+    "id": 110,
+    "titulo": "7.8.2.2",
+    "texto": "O laboratório deve ser responsável por todas as informações fornecidas no relatório, exceto quando as informações forem fornecidas pelo cliente. Dados fornecidos pelo cliente devem ser claramente identificados. Além disso, deve ser incluída uma ressalva no relatório, quando as informações forem fornecidas pelo cliente e puderem afetar a validade dos resultados. Quando o laboratório não for responsável pela etapa de amostragem (por exemplo, a amostra foi fornecida pelo cliente), o laboratório deve indicar no relatório que os resultados se aplicam à amostra conforme recebida."
+  },
+  {
+    "id": 111,
+    "titulo": "7.8.3 Requisitos específicos para relatórios de ensaio",
+    "texto": ""
+  },
+  {
+    "id": 112,
+    "titulo": "7.8.3.1",
+    "texto": "Além dos requisitos listados em 7.8.2, quando necessário para a interpretação dos resultados de ensaio, os relatórios de ensaio devem incluir o seguinte:\na) informações sobre condições específicas de ensaio, como condições ambientais;\nb) quando pertinente, uma declaração de conformidade aos requisitos ou especificações (ver 7.8.6);\nc) quando aplicável, a incerteza de medição apresentada na mesma unidade do mensurando ou na forma de um termo relativo ao mensurando (por exemplo, percentual), quando:\na incerteza de medição for pertinente para a validade ou aplicação dos resultados de ensaio,\nrequerido por uma instrução do cliente, ou\na incerteza de medição afetar a conformidade a um limite de especificação;\nd) quando apropriado, opiniões e interpretações (ver 7.8.7);\ne) informações adicionais que possam ser requeridas por métodos específicos, autoridades, clientes ou grupos de clientes."
+  },
+  {
+    "id": 113,
+    "titulo": "7.8.3.2",
+    "texto": "Quando o laboratório for responsável pela atividade de amostragem, os relatórios de ensaio devem atender aos requisitos listados em 7.8.5, quando necessário para a interpretação dos resultados de ensaio."
+  },
+  {
+    "id": 114,
+    "titulo": "7.8.4 Requisitos específicos para certificados de calibração",
+    "texto": ""
+  },
+  {
+    "id": 115,
+    "titulo": "7.8.4.1",
+    "texto": "Além dos requisitos listados em 7.8.2, os certificados de calibração devem incluir o seguinte:\na) incerteza de medição do resultado de medição, apresentada na mesma unidade do mensurando ou na forma de um termo relativo ao mensurando (por exemplo, percentual);\nNOTA De acordo com o ABNT ISO/IEC Guia 99, um resultado de medição é geralmente expresso como um único valor medido, incluindo a unidade de medida e uma incerteza de medição.\nb) condições (por exemplo, ambientais) sob as quais as calibrações foram realizadas, que tenham influência sobre os resultados de medição;\nc) uma declaração identificando como os resultados das medições são metrologicamente rastreáveis (ver Anexo A);\nd) resultados obtidos antes e depois de qualquer ajuste ou reparo, se disponíveis;\ne) quando pertinente, uma declaração de conformidade aos requisitos ou especificações (ver 7.8.6);\nf) quando apropriado, opiniões e interpretações (ver 7.8.7)."
+  },
+  {
+    "id": 116,
+    "titulo": "7.8.4.2",
+    "texto": "Quando o laboratório for responsável pela atividade de amostragem, os certificados de calibração devem atender aos requisitos listados em 7.8.5, quando necessário para a interpretação dos resultados de calibração."
+  },
+  {
+    "id": 117,
+    "titulo": "7.8.4.3",
+    "texto": "Um certificado de calibração ou etiqueta de calibração não pode conter qualquer recomendação sobre o intervalo de calibração, exceto quando isso tiver sido acordado com o cliente."
+  },
+  {
+    "id": 118,
+    "titulo": "7.8.5 Relato da amostragem - Requisitos específicos",
+    "texto": "Quando o laboratório for responsável pela atividade de amostragem, além dos requisitos listados em 7.8.2, quando necessário para interpretação dos resultados, os relatórios devem incluir o seguinte:\na) data da amostragem;\nb) identificação unívoca do item ou material amostrado (incluindo nome do fabricante, modelo ou tipo de designação e números de série, conforme apropriado);\nc) o local da amostragem, incluindo quaisquer diagramas, esboços ou fotografias;\nd) uma referência ao plano e ao método de amostragem;\ne) detalhes sobre quaisquer condições ambientais durante a amostragem que afetem a interpretação dos resultados;\nf) informações requeridas para avaliar a incerteza de medição para ensaio ou calibração subsequente."
+  },
+  {
+    "id": 119,
+    "titulo": "7.8.6 Relato de declarações de conformidade",
+    "texto": ""
+  },
+  {
+    "id": 120,
+    "titulo": "7.8.6.1",
+    "texto": "Quando for fornecida uma declaração de conformidade a uma especificação ou norma, o laboratório deve documentar a regra de decisão empregada, considerando o nível de risco (como falsa aceitação e falsa rejeição e pressupostos estatísticos) associado à regra de decisão empregada, e aplicar a regra de decisão.\nNOTA Quando a regra de decisão for prescrita pelo cliente, por regulamentos ou documentos normativos, não é necessária uma análise adicional sobre o nível de risco."
+  },
+  {
+    "id": 121,
+    "titulo": "7.8.6.2",
+    "texto": "O laboratório deve relatar a declaração de conformidade, de modo que a declaração identifique claramente:\na) a quais resultados a declaração de conformidade se aplica;\nb) quais especificações, normas ou partes destas são atendidas ou não atendidas;\nc) a regra de decisão aplicada (a menos que esta seja inerente à especificação ou norma solicitada).\nNOTA Para mais informações, ver o ISO/IEC Guide 98-4."
+  },
+  {
+    "id": 122,
+    "titulo": "7.8.7 Relato de opiniões e interpretações",
+    "texto": ""
+  },
+  {
+    "id": 123,
+    "titulo": "7.8.7.1",
+    "texto": "Quando forem expressas opiniões e interpretações, o laboratório deve assegurar que apenas pessoal autorizado para a expressão de opiniões e interpretações emita a respectiva declaração. O laboratório deve documentar as bases nas quais as opiniões e interpretações foram elaboradas.\nNOTA É importante diferenciar opiniões e interpretações de declarações de inspeções e certificações de produto, conforme previsto nas ABNT NBR ISO/IEC 17020 e ABNT NBR ISO/IEC 17065, bem como das declarações de conformidade citadas em 7.8.6."
+  },
+  {
+    "id": 124,
+    "titulo": "7.8.7.2",
+    "texto": "As opiniões e interpretações expressas em relatórios devem ser baseadas nos resultados obtidos a partir do item ensaiado ou calibrado, e devem ser claramente identificadas como tais."
+  },
+  {
+    "id": 125,
+    "titulo": "7.8.7.3",
+    "texto": "Quando opiniões e interpretações forem comunicadas por meio do diálogo direto com o cliente, deve ser retido um registro do diálogo."
+  },
+  {
+    "id": 126,
+    "titulo": "7.8.8 Emendas aos relatórios",
+    "texto": ""
+  },
+  {
+    "id": 127,
+    "titulo": "7.8.8.1",
+    "texto": "Quando um relatório emitido necessita ser modificado, submetido a emendas ou reemitido, qualquer alteração de informações deve ser claramente identificada e, quando apropriado, a razão para a alteração deve ser incluída no relatório."
+  },
+  {
+    "id": 128,
+    "titulo": "7.8.8.2",
+    "texto": "As emendas a um relatório após a emissão devem ser feitas somente sob a forma de um novo documento, ou transferência de dados, que inclua a declaração \"Emenda ao Relatório, número de série... [ou outra forma de identificação]\", ou uma forma de redação equivalente. Estas emendas devem atender a todos os requisitos deste documento."
+  },
+  {
+    "id": 129,
+    "titulo": "7.8.8.3",
+    "texto": "Quando for necessário emitir um novo relatório completo, este deve ser univocamente identificado e deve conter uma referência ao original que está sendo substituído."
+  },
+  {
+    "id": 130,
+    "titulo": "7.9 Reclamações",
+    "texto": ""
+  },
+  {
+    "id": 131,
+    "titulo": "7.9.1",
+    "texto": "O laboratório deve ter um processo documentado para receber, avaliar e tomar decisões sobre reclamações."
+  },
+  {
+    "id": 132,
+    "titulo": "7.9.2",
+    "texto": "Uma descrição do processo para tratar reclamações deve estar disponível a qualquer parte interessada, quando solicitada. Após receber uma reclamação, o laboratório deve confirmar se a reclamação está relacionada às atividades de laboratório pelas quais é responsável e, se for, deve tratá-las. O laboratório deve ser responsável por todas as decisões em todos os níveis do processo de tratamento de reclamações."
+  },
+  {
+    "id": 133,
+    "titulo": "7.9.3",
+    "texto": "O processo para tratamento de reclamações deve incluir no mínimo os seguintes elementos e métodos:\na) descrição do processo para receber, validar e investigar a reclamação, e decidir quais ações têm que ser tomadas em resposta à reclamação;\nb) monitorar e registrar reclamações, incluindo ações tomadas para resolvê-las;\nc) assegurar que qualquer ação apropriada seja tomada."
+  },
+  {
+    "id": 134,
+    "titulo": "7.9.4",
+    "texto": "O laboratório que receber a reclamação deve ser responsável por coletar e verificar todas as informações necessárias para validar a reclamação."
+  },
+  {
+    "id": 135,
+    "titulo": "7.9.5",
+    "texto": "Sempre que possível, o laboratório deve acusar o recebimento da reclamação e fornecer ao reclamante relatos sobre o progresso e a conclusão."
+  },
+  {
+    "id": 136,
+    "titulo": "7.9.6",
+    "texto": "As conclusões a serem comunicadas ao reclamante devem ser elaboradas por, ou analisadas criticamente e aprovadas por, indivíduo(s) que não esteja(m) envolvido(s) nas atividades de laboratório originais em questão.\nNOTA Isso pode ser realizado por pessoal externo."
+  },
+  {
+    "id": 137,
+    "titulo": "7.9.7",
+    "texto": "Sempre que possível, o laboratório deve notificar formalmente ao reclamante o término do tratamento da reclamação."
+  },
+  {
+    "id": 138,
+    "titulo": "7.10 Trabalho não conforme",
+    "texto": ""
+  },
+  {
+    "id": 139,
+    "titulo": "7.10.1",
+    "texto": "O laboratório deve ter um procedimento que deve ser implementado quando qualquer aspecto das atividades de laboratório ou os resultados deste trabalho não estiverem em conformidade com seus próprios procedimentos ou com os requisitos acordados com o cliente (por exemplo, equipamentos ou condições ambientais fora dos limites especificados, resultados do monitoramento que não atendem aos critérios especificados). O procedimento deve assegurar que:\na) sejam definidas as responsabilidades e autoridades pela gestão do trabalho não conforme;\nb) as ações (incluindo interrupção ou repetição do trabalho e retenção dos relatórios, quando necessário) sejam baseadas nos níveis de risco estabelecidos pelo laboratório;\nc) seja feita uma avaliação da importância do trabalho não conforme, incluindo uma análise do impacto em resultados anteriores;\nd) seja tomada uma decisão sobre a aceitabilidade do trabalho não conforme;\ne) quando necessário, o cliente seja notificado e o trabalho seja cancelado;\nf) seja definida a responsabilidade pela autorização da retomada do trabalho."
+  },
+  {
+    "id": 140,
+    "titulo": "7.10.2",
+    "texto": "O laboratório deve reter registros dos trabalhos não conformes e das ações conforme especificado em 7.10.1 alíneas b) a f)."
+  },
+  {
+    "id": 141,
+    "titulo": "7.10.3",
+    "texto": "Quando a avaliação indicar que o trabalho não conforme pode se repetir ou que existe dúvida sobre a conformidade das operações do laboratório com o seu sistema de gestão, o laboratório deve implementar ação corretiva."
+  },
+  {
+    "id": 142,
+    "titulo": "7.11 Controle de dados e gestão da informação",
+    "texto": ""
+  },
+  {
+    "id": 143,
+    "titulo": "7.11.1",
+    "texto": "O laboratório deve ter acesso aos dados e informações necessários para realizar atividades de laboratório."
+  },
+  {
+    "id": 144,
+    "titulo": "7.11.2",
+    "texto": "Antes da sua implantação, o(s) sistema(s) de gestão da informação laboratorial, utilizado(s) para a coleta, processamento, registro, relato, armazenamento ou recuperação de dados, deve(m) ser validado(s) pelo laboratório quanto à funcionalidade, incluindo o funcionamento adequado das interfaces do(s) sistema(s) de gestão da informação laboratorial. Sempre que houver alguma alteração, incluindo configurações ou modificações feitas pelo laboratório em softwares comerciais de prateleira, estas devem ser autorizadas, documentadas e validadas antes da implementação.\nNOTA 1 Neste documento \"sistema(s) de gestão da informação laboratorial\" inclui a gestão de dados e informações contidas nos sistemas informatizados e não informatizados. Alguns dos requisitos podem ser mais aplicáveis aos sistemas informatizados do que aos sistemas não informatizados.\nNOTA 2 Podem ser considerados suficientemente validados os softwares comerciais de prateleira utilizados em aplicações de cunho geral, dentro do campo de aplicação para o qual foram projetados."
+  },
+  {
+    "id": 145,
+    "titulo": "7.11.3",
+    "texto": "O(s) sistema(s) de gestão da informação laboratorial deve(m):\na) ser protegido(s) contra o acesso não autorizado;\nb) ser protegido(s) contra adulteração ou perda;\nc) ser operado(s) em um ambiente que esteja em conformidade com as especificações do provedor ou do laboratório ou, no caso de sistemas não informatizados, prover condições que protejam a exatidão dos registros e transcrições manuais;\nd) ser mantido(s) de forma que assegure(m) a integridade dos dados e informações;\ne) incluir o registro das falhas do sistema e as ações imediatas e corretivas apropriadas."
+  },
+  {
+    "id": 146,
+    "titulo": "7.11.4",
+    "texto": "Quando um sistema de gestão da informação laboratorial for gerenciado e mantido fora de suas instalações ou por meio de um provedor externo, o laboratório deve assegurar que o provedor ou o operador do sistema cumpra todos os requisitos aplicáveis deste documento."
+  },
+  {
+    "id": 147,
+    "titulo": "7.11.5",
+    "texto": "O laboratório deve assegurar que instruções, manuais e dados de referência pertinentes para o(s) sistema(s) de gestão da informação laboratorial sejam mantidos prontamente disponíveis para o pessoal."
+  },
+  {
+    "id": 148,
+    "titulo": "7.11.6",
+    "texto": "Os cálculos e as transferências de dados devem ser submetidos a conferências apropriadas de maneira sistemática."
+  },
+  {
+    "id": 149,
+    "titulo": "8 Requisitos do sistema de gestão",
+    "texto": ""
+  },
+  {
+    "id": 150,
+    "titulo": "8.1 Opções",
+    "texto": ""
+  },
+  {
+    "id": 151,
+    "titulo": "8.1.1 Generalidades",
+    "texto": "O laboratório deve estabelecer, documentar, implementar e manter um sistema de gestão que seja capaz de apoiar e demonstrar o atendimento consistente aos requisitos deste documento e assegurar a qualidade dos resultados do laboratório. Além de atender aos requisitos das Seções 4 a 7, o laboratório deve implementar um sistema de gestão de acordo com a Opção A ou a Opção B.\nNOTA Ver Anexo B para mais informações."
+  },
+  {
+    "id": 152,
+    "titulo": "8.1.2 Opção A",
+    "texto": "O sistema de gestão do laboratório deve no mínimo abordar o seguinte:\n— documentação do sistema de gestão (ver 8.2);\n— controle de documentos do sistema de gestão (ver 8.3);\n— controle de registros (ver 8.4);\n— ações para abordar riscos e oportunidades (ver 8.5);\n— melhoria (ver 8.6);\n— ações corretivas (ver 8.7);\n— auditorias internas (ver 8.8);\n— análises críticas pela gerência (ver 8.9)."
+  },
+  {
+    "id": 153,
+    "titulo": "8.1.3 Opção B",
+    "texto": "Um laboratório que tenha estabelecido e mantenha um sistema de gestão, de acordo com os requisitos da ABNT NBR ISO 9001, e que seja capaz de apoiar e demonstrar o atendimento consistente aos requisitos das Seções 4 a 7, também atende pelo menos à intenção dos requisitos sobre sistema de gestão, especificados em 8.2 a 8.9."
+  },
+  {
+    "id": 154,
+    "titulo": "8.2 Documentação do sistema de gestão (Opção A)",
+    "texto": ""
+  },
+  {
+    "id": 155,
+    "titulo": "8.2.1",
+    "texto": "A gerência do laboratório deve estabelecer, documentar e manter políticas e objetivos para o atendimento ao propósito deste documento e deve assegurar que as políticas e os objetivos sejam reconhecidos e implementados em todos os níveis da organização do laboratório."
+  },
+  {
+    "id": 156,
+    "titulo": "8.2.2",
+    "texto": "As políticas e os objetivos devem abordar a competência, imparcialidade e operação consistente do laboratório."
+  },
+  {
+    "id": 157,
+    "titulo": "8.2.3",
+    "texto": "A gerência do laboratório deve fornecer evidência do seu comprometimento com o desenvolvimento e implementação do sistema de gestão e com a melhoria contínua de sua eficácia."
+  },
+  {
+    "id": 158,
+    "titulo": "8.2.4",
+    "texto": "Toda a documentação, processos, sistemas e registros relacionados com o atendimento aos requisitos deste documento devem ser incluídos, referenciados ou vinculados ao sistema de gestão."
+  },
+  {
+    "id": 159,
+    "titulo": "8.2.5",
+    "texto": "Todo o pessoal envolvido em atividades de laboratório deve ter acesso às partes da documentação do sistema de gestão e informações relacionadas que sejam aplicáveis às suas responsabilidades."
+  },
+  {
+    "id": 160,
+    "titulo": "8.3 Controle de documentos do sistema de gestão (Opção A)",
+    "texto": ""
+  },
+  {
+    "id": 161,
+    "titulo": "8.3.1",
+    "texto": "O laboratório deve controlar os documentos (internos e externos) relacionados com o atendimento a este documento.\nNOTA Neste contexto, “documentos” podem ser declarações de política, procedimentos, especificações, instruções do fabricante, tabelas de calibração, gráficos, livros didáticos, cartazes, avisos, memorandos, desenhos, planos etc. Estes podem existir em vários meios, impressos ou digitais."
+  },
+  {
+    "id": 162,
+    "titulo": "8.3.2",
+    "texto": "O laboratório deve assegurar que:\na) os documentos sejam aprovados com relação à sua adequação antes de serem emitidos por pessoal autorizado;\nb) os documentos sejam periodicamente submetidos à análise crítica e, conforme necessário, atualizados;\nc) as alterações e a situação atual da revisão dos documentos sejam identificadas;\nd) as versões pertinentes dos documentos aplicáveis estejam disponíveis nos pontos de utilização e, quando necessário, sua distribuição seja controlada;\ne) os documentos sejam univocamente identificados;\nf) a utilização não intencional de documentos obsoletos seja evitada e uma identificação apropriada lhes seja aplicada se estes forem retidos para qualquer propósito."
+  },
+  {
+    "id": 163,
+    "titulo": "8.4 Controle de registros (Opção A)",
+    "texto": ""
+  },
+  {
+    "id": 164,
+    "titulo": "8.4.1",
+    "texto": "O laboratório deve estabelecer e reter registros legíveis para demonstrar o atendimento aos requisitos deste documento."
+  },
+  {
+    "id": 165,
+    "titulo": "8.4.2",
+    "texto": "O laboratório deve implementar os controles necessários para a identificação, armazenamento, proteção, cópias de segurança, arquivamento, recuperação, tempo de retenção e disposição dos seus registros. O laboratório deve reter os registros por um período consistente com suas obrigações contratuais. O acesso a estes registros deve ser consistente com seus compromissos de confidencialidade, e os registros devem estar prontamente disponíveis.\nNOTA Requisitos adicionais relacionados aos registros técnicos são fornecidos em 7.5."
+  },
+  {
+    "id": 166,
+    "titulo": "8.5 Ações para abordar riscos e oportunidades (Opção A)",
+    "texto": ""
+  },
+  {
+    "id": 167,
+    "titulo": "8.5.1",
+    "texto": "O laboratório deve considerar os riscos e as oportunidades associados com as atividades de laboratório, a fim de:\na) assegurar que o sistema de gestão alcance seus resultados pretendidos;\nb) aumentar as oportunidades para atingir os propósitos e objetivos do laboratório;\nc) prevenir ou reduzir impactos indesejáveis e possíveis falhas nas atividades de laboratório;\nd) alcançar melhoria."
+  },
+  {
+    "id": 168,
+    "titulo": "8.5.2",
+    "texto": "O laboratório deve planejar:\na) ações para abordar estes riscos e oportunidades;\nb) como:\n— integrar e implementar estas ações em seu sistema de gestão;\n— avaliar a eficácia destas ações.\nNOTA Embora este documento especifique que o laboratório planeja ações para abordar riscos, não há requisito para métodos formais para gestão de riscos ou um processo de gestão de risco documentado. Os laboratórios podem decidir desenvolver ou não uma metodologia de gestão de risco mais extensiva que a requerida por este documento, por exemplo, por meio da aplicação de outra orientação ou norma."
+  },
+  {
+    "id": 169,
+    "titulo": "8.5.3",
+    "texto": "Ações tomadas para abordar os riscos e as oportunidades devem ser proporcionais ao impacto potencial sobre a validade dos resultados do laboratório.\nNOTA 1 Opções para abordar os riscos podem incluir: identificar e evitar ameaças, assumir o risco a fim de perseguir uma oportunidade, eliminar a fonte de risco, mudar a probabilidade ou as consequências, compartilhar o risco ou decidir, com base em informações, reter o risco.\nNOTA 2 Oportunidades podem levar à expansão do escopo das atividades de laboratório, abordagem de novos clientes, utilização de novas tecnologias e outras possibilidades de abordar as necessidades do cliente."
+  },
+  {
+    "id": 170,
+    "titulo": "8.6 Melhoria (Opção A)",
+    "texto": ""
+  },
+  {
+    "id": 171,
+    "titulo": "8.6.1",
+    "texto": "O laboratório deve identificar e selecionar oportunidades para melhoria e implementar quaisquer ações necessárias.\nNOTA Oportunidades de melhoria podem ser identificadas por meio da análise crítica dos procedimentos operacionais, do uso de políticas, objetivos gerais, resultados de auditorias, ações corretivas, análise crítica pela gerência, sugestões feitas pelo pessoal, avaliação de risco, análise de dados e resultados de ensaios de proficiência."
+  },
+  {
+    "id": 172,
+    "titulo": "8.6.2",
+    "texto": "O laboratório deve procurar obter retroalimentação, tanto positiva quanto negativa, dos seus clientes. A retroalimentação deve ser analisada e utilizada para aprimorar o sistema de gestão, as atividades de laboratório e o atendimento ao cliente.\nNOTA Exemplos de tipos de retroalimentação incluem pesquisas de satisfação de clientes, registros de comunicação e análise crítica dos relatórios com os clientes."
+  },
+  {
+    "id": 173,
+    "titulo": "8.7 Ações corretivas (Opção A)",
+    "texto": ""
+  },
+  {
+    "id": 174,
+    "titulo": "8.7.1",
+    "texto": "Ao ocorrer uma não conformidade, o laboratório deve:\na) reagir à não conformidade e, conforme aplicável:\n— tomar ação para controlá-la e corrigi-la;\n— lidar com as consequências;\nb) avaliar a necessidade de ação para eliminar a(s) causa(s) da não conformidade, a fim de que ela não se repita ou ocorra em outro lugar:\n— analisando criticamente a não conformidade;\n— determinando as causas da não conformidade;\n— determinando se não conformidades similares existem, ou se podem potencialmente ocorrer;\nc) implementar qualquer ação necessária;\nd) analisar criticamente a eficácia de qualquer ação corretiva tomada;\ne) atualizar riscos e oportunidades determinados durante o planejamento, se necessário;\nf) realizar mudanças no sistema de gestão, se necessário."
+  },
+  {
+    "id": 175,
+    "titulo": "8.7.2",
+    "texto": "Ações corretivas devem ser apropriadas aos efeitos das não conformidades encontradas."
+  },
+  {
+    "id": 176,
+    "titulo": "8.7.3",
+    "texto": "O laboratório deve reter registros como evidência:\na) da natureza das não conformidades, causa(s) e quaisquer ações subsequentes tomadas;\nb) dos resultados de qualquer ação corretiva."
+  },
+  {
+    "id": 177,
+    "titulo": "8.8 Auditorias internas (Opção A)",
+    "texto": ""
+  },
+  {
+    "id": 178,
+    "titulo": "8.8.1",
+    "texto": "O laboratório deve conduzir auditorias internas a intervalos planejados para prover informações sobre se o sistema de gestão:\na) está conforme com:\n— os requisitos do próprio laboratório para o seu sistema de gestão, incluindo as atividades de laboratório;\n— os requisitos deste documento;\nb) está implementado e mantido eficazmente."
+  },
+  {
+    "id": 179,
+    "titulo": "8.8.2",
+    "texto": "O laboratório deve:\na) planejar, estabelecer, implementar e manter um programa de auditoria, incluindo a frequência, métodos, responsabilidades, requisitos para planejar e o relato, que deve levar em consideração a importância das atividades de laboratório concernentes, mudanças que afetam o laboratório e os resultados de auditorias anteriores;\nb) definir os critérios de auditoria e o escopo para cada auditoria;\nc) assegurar que os resultados das auditorias sejam relatados à gerência pertinente;\nd) implementar correção e ações corretivas apropriadas sem demora indevida;\ne) reter registros como evidência da implementação do programa de auditoria e dos resultados de auditoria.\nNOTA A ABNT NBR ISO 19011 fornece orientação sobre auditorias internas."
+  },
+  {
+    "id": 180,
+    "titulo": "8.9 Análises críticas pela gerência (Opção A)",
+    "texto": ""
+  },
+  {
+    "id": 181,
+    "titulo": "8.9.1",
+    "texto": "A gerência do laboratório deve analisar criticamente seu sistema de gestão a intervalos planejados, a fim de assegurar sua contínua adequação, suficiência e eficácia, incluindo as políticas e objetivos declarados, relacionados ao atendimento a este documento."
+  },
+  {
+    "id": 182,
+    "titulo": "8.9.2",
+    "texto": "As entradas para a análise crítica pela gerência devem ser registradas e devem incluir informações relacionadas com:\na) mudanças em questões externas e internas que sejam pertinentes para o laboratório;\nb) atendimento aos objetivos;\nc) adequação das políticas e procedimentos;\nd) situação das ações decorrentes de análises críticas anteriores pela gerência;\ne) conclusões das auditorias internas recentes;\nf) ações corretivas;\ng) avaliações realizadas por organizações externas;\nh) mudanças no volume e tipo do trabalho ou em seu conjunto de atividades de laboratório;\ni) retroalimentação de clientes e do pessoal;\nj) reclamações;\nk) eficácia de quaisquer melhorias implementadas;\nl) suficiência de recursos;\nm) resultados da identificação de riscos;\nn) conclusões sobre a garantia da validade de resultados;\no) outros fatores pertinentes, como atividades de monitoramento e treinamento."
+  },
+  {
+    "id": 183,
+    "titulo": "8.9.3",
+    "texto": "As saídas da análise crítica pela gerência devem registrar todas as decisões e ações relacionadas pelo menos com:\na) a eficácia do sistema de gestão e seus processos;\nb) a melhoria das atividades de laboratório com respeito ao atendimento aos requisitos deste documento;\nc) a provisão de recursos requeridos;\nd) quaisquer necessidades de mudanças."
+  }
+]
