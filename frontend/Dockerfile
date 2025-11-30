@@ -1,4 +1,4 @@
-# Dockerfile for Streamlit RAG Frontend
+# Dockerfile for Streamlit RAG Frontend - Optimized with layer caching
 FROM python:3.10-slim as builder
 
 # Install system dependencies for building
@@ -8,14 +8,16 @@ RUN apt-get update && apt-get install -y \
     g++ \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
+WORKDIR /build
 
-# Create minimal requirements for Streamlit frontend
+# Create and copy requirements first (to leverage Docker cache)
 RUN echo 'streamlit>=1.28.0\n\
 requests>=2.31.0\n\
-' > requirements-frontend.txt
+' > requirements.txt
 
-RUN pip install --no-cache-dir --user -r requirements-frontend.txt
+# Install dependencies in a separate layer for better caching
+RUN pip install --no-cache-dir --user --upgrade pip setuptools wheel && \
+    pip install --no-cache-dir --user -r requirements.txt
 
 # Production stage
 FROM python:3.10-slim
@@ -49,10 +51,13 @@ EXPOSE 8501
 HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
     CMD curl -f http://localhost:8501/_stcore/health || exit 1
 
+# Streamlit configuration for production
+ENV STREAMLIT_SERVER_PORT=8501 \
+    STREAMLIT_SERVER_ADDRESS=0.0.0.0 \
+    STREAMLIT_SERVER_HEADLESS=true \
+    STREAMLIT_SERVER_RUN_ON_SAVE=false \
+    STREAMLIT_BROWSER_GATHER_USAGE_STATS=false \
+    STREAMLIT_CLIENT_TOOLBAR_MODE=minimal
+
 # Start Streamlit
-CMD ["streamlit", "run", "app_streamlit.py", \
-     "--server.port=8501", \
-     "--server.address=0.0.0.0", \
-     "--server.headless=true", \
-     "--server.runOnSave=false", \
-     "--browser.gatherUsageStats=false"]
+CMD ["streamlit", "run", "app_streamlit.py"]

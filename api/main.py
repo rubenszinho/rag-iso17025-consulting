@@ -87,9 +87,10 @@ Resposta técnica:
 """
 
     # === Chamar o modelo GPT para gerar resposta de consultoria ===
+    model_name = os.getenv("MODEL_NAME", "gpt-4o-mini")
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=model_name,
             messages=[{"role": "user", "content": prompt}],
             temperature=0.2,
             max_tokens=800

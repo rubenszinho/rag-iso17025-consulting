@@ -1,0 +1,38 @@
+# Root .dockerignore - applied when building from root
+.git
+.gitignore
+.github
+.vscode
+.idea
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+.env.local
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated
+iso17025_faiss_qwen/
+
+# Documentation
+*.md
+README*
+*.pdf
+*.tex

@@ -1,18 +1,55 @@
-# Frontend Service .dockerignore
+# Version control
+.git
+.gitignore
+.github
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-.env
-.env.local
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
 .venv/
 venv/
 ENV/
-*.egg-info/
-.git/
-.gitignore
-*.md
+env/
+
+# Environment files
+.env
+.env.local
+
+# Testing
 .pytest_cache/
 .coverage
 htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Documentation
+*.md
+README*
+
+# Root level and backend files
+api/
+PBL_3.pdf
+report_template.tex
+iso17025*.json
+test_system.py
+iso17025_faiss_qwen/

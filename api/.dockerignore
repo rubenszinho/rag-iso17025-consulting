@@ -1,19 +1,57 @@
-# API Service .dockerignore
+# Version control
+.git
+.gitignore
+.github
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-.env
-.env.local
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
 .venv/
 venv/
 ENV/
-*.egg-info/
-.git/
-.gitignore
-*.md
+env/
+
+# Environment files
+.env
+.env.local
+
+# Testing
 .pytest_cache/
 .coverage
 htmlcov/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated vector store (should use volume)
 iso17025_faiss_qwen/
+
+# Documentation
+*.md
+README*
+
+# Root level files
+PBL_3.pdf
+report_template.tex
+iso17025.json
+test_system.py
