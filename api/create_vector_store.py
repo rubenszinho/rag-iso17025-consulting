@@ -1,21 +1,39 @@
 import os
 import json
 import numpy as np
+import requests
 from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
 from langchain_community.vectorstores import FAISS
 
-# === 1. Carregar JSON ===
-# Tentar primeiro o arquivo com IDs e títulos, depois o arquivo simples
-json_files = ["iso17025.json"]
+# === 1. Carregar JSON (local ou online) ===
 data = None
+json_files = ["iso17025.json"]
+json_url = "https://media.rubenszinho.dev/rubenszinho/iso17025.json"
 
+# Tentar arquivo local primeiro
 for json_path in json_files:
     if os.path.exists(json_path):
-        print(f"🔍 Carregando arquivo: {json_path}")
+        print(f"🔍 Carregando arquivo local: {json_path}")
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         break
+
+# Se não encontrou localmente, baixar online
+if data is None:
+    print(f"📥 Baixando JSON de: {json_url}")
+    try:
+        response = requests.get(json_url, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+        print("✅ JSON baixado com sucesso")
+        
+        # Salvar localmente para próximas execuções
+        with open("iso17025.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        print("💾 JSON salvo localmente para próximas execuções")
+    except requests.exceptions.RequestException as e:
+        raise RuntimeError(f"Erro ao baixar JSON online: {e}")
 
 if data is None:
     raise FileNotFoundError("Nenhum arquivo JSON da ISO 17025 encontrado!")

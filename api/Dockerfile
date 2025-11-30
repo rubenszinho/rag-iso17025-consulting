@@ -32,7 +32,6 @@ COPY --from=builder /root/.local /root/.local
 WORKDIR /app
 
 # Copy only necessary files for API
-COPY iso17025.json .
 COPY main.py .
 COPY create_vector_store.py .
 
