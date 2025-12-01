@@ -105,7 +105,7 @@ Os Dockerfiles foram otimizados para:
 
 | Variável | Descrição | Obrigatória |
 |----------|-----------|-------------|
-| `OPENAI_API_KEY` | Chave da API OpenAI | ✅ |
+| `OPENAI_API_KEY` | Chave da API OpenAI | |
 | `MODEL_NAME` | Modelo GPT (default: gpt-4o-mini) | ❌ |
 | `TEMPERATURE` | Temperatura do modelo (default: 0.2) | ❌ |
 | `MAX_TOKENS` | Máximo de tokens (default: 800) | ❌ |
@@ -115,7 +115,7 @@ Os Dockerfiles foram otimizados para:
 
 | Variável | Descrição | Obrigatória |
 |----------|-----------|-------------|
-| `API_URL` | URL da API RAG | ✅ |
+| `API_URL` | URL da API RAG | |
 
 ## Endpoints
 

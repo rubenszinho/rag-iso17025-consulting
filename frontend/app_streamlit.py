@@ -108,11 +108,11 @@ with st.sidebar:
     try:
         health = requests.get(f"{API_BASE_URL}/health", timeout=2)
         if health.status_code == 200:
-            st.success("✅ API Online", icon="✅")
+            st.success("API Online", icon="✅")
         else:
             st.warning("⚠️ API com Problema", icon="⚠️")
     except:
-        st.error("❌ API Offline", icon="❌")
+        st.error("API Offline", icon="❌")
         st.caption(f"Não conseguiu conectar em: {API_BASE_URL}")
     
     info_col1, info_col2 = st.columns(2)

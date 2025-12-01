@@ -99,7 +99,7 @@ async def ask_rag(req: QueryRequest):
         retrieval_time = (time.time() - retrieval_start) * 1000  # em ms
         
         context = "\n\n".join([doc.page_content for doc in retrieved_docs])
-        logger.info(f"✅ Recuperados {len(retrieved_docs)} documentos em {retrieval_time:.2f}ms")
+        logger.info(f"Recuperados {len(retrieved_docs)} documentos em {retrieval_time:.2f}ms")
         
         # Registrar documentos recuperados
         doc_refs = [doc.metadata.get('section', 'Unknown') if hasattr(doc, 'metadata') else f'Doc {i}' 
@@ -138,7 +138,7 @@ Resposta técnica:
         generation_time = (time.time() - generation_start) * 1000  # em ms
         
         answer = response.choices[0].message.content.strip()
-        logger.info(f"✅ Resposta gerada em {generation_time:.2f}ms")
+        logger.info(f"Resposta gerada em {generation_time:.2f}ms")
         
         # === Calcular tempo total ===
         total_time = (time.time() - query_start_time) * 1000  # em ms

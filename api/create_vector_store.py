@@ -26,7 +26,7 @@ if data is None:
         response = requests.get(json_url, timeout=30)
         response.raise_for_status()
         data = response.json()
-        print("✅ JSON baixado com sucesso")
+        print("JSON baixado com sucesso")
         
         # Salvar localmente para próximas execuções
         with open("iso17025.json", "w", encoding="utf-8") as f:
@@ -64,7 +64,7 @@ torch.cuda.is_available = lambda : False
 
 # Usar modelo mais leve que funciona bem em CPU
 embedder = SentenceTransformer("all-MiniLM-L6-v2", device='cpu')
-print("✅ Modelo carregado com sucesso (CPU)")
+print("Modelo carregado com sucesso (CPU)")
 
 
 # === 3. Gerar embeddings em lote ===
@@ -76,7 +76,7 @@ for i in tqdm(range(0, len(texts), batch_size), desc="🔍 Gerando embeddings"):
     embeddings.extend(batch_emb)
 
 embeddings = np.array(embeddings)
-print(f"✅ Embeddings gerados: {embeddings.shape}")
+print(f"Embeddings gerados: {embeddings.shape}")
 
 # === 4. Criar índice FAISS para consultoria em qualidade laboratorial ===
 text_embeddings = list(zip(texts, embeddings))
@@ -84,4 +84,4 @@ faiss_index = FAISS.from_embeddings(text_embeddings, embedder)
 faiss_index.save_local("iso17025_faiss_qwen")
 
 print("💾 Base vetorial salva em 'iso17025_faiss_qwen'")
-print("✅ Sistema RAG para consultoria em qualidade laboratorial pronto!")
+print("Sistema RAG para consultoria em qualidade laboratorial pronto!")
