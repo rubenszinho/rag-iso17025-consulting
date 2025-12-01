@@ -94,7 +94,7 @@ col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.markdown("""
         <div class="header-container">
-            <img src="https://media.rubrion.ai/images/loading_rubrion.svg" width="120" style="margin: 0 auto; display: block; margin-bottom: 1rem;">
+            <img src="https://media.rubenszinho.dev/images/loading_rubrion.svg" width="120" style="margin: 0 auto; display: block; margin-bottom: 1rem;">
             <div class="header-title">RAG Consulting</div>
             <div class="header-subtitle">Assistente de Consultoria em Qualidade Laboratorial</div>
         </div>
