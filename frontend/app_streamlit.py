@@ -104,6 +104,17 @@ with col2:
 with st.sidebar:
     st.markdown("## Sobre o Sistema")
     
+    # Health check
+    try:
+        health = requests.get(f"{API_BASE_URL}/health", timeout=2)
+        if health.status_code == 200:
+            st.success("✅ API Online", icon="✅")
+        else:
+            st.warning("⚠️ API com Problema", icon="⚠️")
+    except:
+        st.error("❌ API Offline", icon="❌")
+        st.caption(f"Não conseguiu conectar em: {API_BASE_URL}")
+    
     info_col1, info_col2 = st.columns(2)
     with info_col1:
         st.markdown("""
@@ -226,10 +237,26 @@ if submit_button:
                     st.info("Verifique se a API está disponível.")
                     
             except requests.exceptions.ConnectionError:
-                st.error("Não foi possível conectar à API")
-                st.info(f"Verifique se o serviço está rodando em: {API_BASE_URL}")
+                st.error("❌ Erro de Conexão")
+                st.warning(f"Não foi possível conectar à API em: **{API_BASE_URL}**")
+                st.info("""
+                    **Possíveis causas:**
+                    - API não está rodando
+                    - Endereço da API incorreto
+                    - Problema de rede/firewall
+                    
+                    **Soluções:**
+                    1. Verifique se a API está em execução
+                    2. Confirme o endereço em `API_URL`
+                    3. Para desenvolvimento local: `http://localhost:8000`
+                    4. Para Docker: `http://api:8000`
+                """)
+            except requests.exceptions.Timeout:
+                st.error("❌ Tempo de Espera Excedido")
+                st.warning("A API demorou muito para responder. Tente novamente.")
             except Exception as e:
-                st.error(f"Erro ao processar consulta: {str(e)}")
+                st.error(f"❌ Erro ao processar consulta: {str(e)}")
+                st.debug(f"Detalhes: {type(e).__name__}")
 
 # Footer
 st.markdown("---")

@@ -1,0 +1,49 @@
+# Streamlit Configuration for Production and Development
+
+[theme]
+primaryColor = "#2596be"
+backgroundColor = "#0f1419"
+secondaryBackgroundColor = "#1a1f28"
+textColor = "#e0e0e0"
+font = "sans serif"
+
+[client]
+# WebSocket configuration for production environments
+showErrorDetails = true
+toolbarMode = "viewer"
+# Allow connections from different domains
+allowRunOnSave = true
+
+[logger]
+level = "info"
+
+[server]
+# Server configuration
+port = 8501
+headless = true
+runOnSave = false
+
+# CORS configuration - CRITICAL for production
+# Allows WebSocket connections from Railway
+[server.allowedOrigins]
+# Auto-detect based on domain
+
+# Proxy headers for proper X-Forwarded-For handling
+# This is essential when behind a reverse proxy like Railway
+enableXsrfProtection = true
+enableCORS = true
+
+# Streamlit server settings for WebSocket stability
+[client.showRunPage]
+showRunPage = false
+
+[logger.loggerFormat]
+message = "%(asctime)s | %(name)s | %(levelname)s | %(message)s"
+
+# Memory management
+[client.toolbarMode]
+toolbarMode = "viewer"
+
+# Disable file watcher in production
+[server.fileWatcherType]
+fileWatcherType = "none"

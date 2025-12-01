@@ -51,13 +51,18 @@ EXPOSE 8501
 HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
     CMD curl -f http://localhost:8501/_stcore/health || exit 1
 
+# Copy Streamlit configuration
+COPY .streamlit/config.toml /root/.streamlit/config.toml
+
 # Streamlit configuration for production
 ENV STREAMLIT_SERVER_PORT=8501 \
     STREAMLIT_SERVER_ADDRESS=0.0.0.0 \
     STREAMLIT_SERVER_HEADLESS=true \
     STREAMLIT_SERVER_RUN_ON_SAVE=false \
     STREAMLIT_BROWSER_GATHER_USAGE_STATS=false \
-    STREAMLIT_CLIENT_TOOLBAR_MODE=minimal
+    STREAMLIT_CLIENT_TOOLBAR_MODE=viewer \
+    STREAMLIT_SERVER_ENABLE_CORS=true \
+    STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION=true
 
-# Start Streamlit
-CMD ["streamlit", "run", "app_streamlit.py"]
+# Start Streamlit with proper WebSocket support
+CMD ["streamlit", "run", "--logger.level=info", "app_streamlit.py"]

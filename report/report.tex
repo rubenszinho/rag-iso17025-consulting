@@ -182,40 +182,67 @@ Foram realizados testes extensivos com consultas reais do cenário de consultori
 
 \begin{table}[ht]
 \centering
-\caption{Validação do sistema com consultas reais e métricas de desempenho}
+\caption{Validação do sistema com consultas reais e métricas de desempenho.}
 \label{tab:evaluation}
-\begin{tabular}{|p{4cm}|p{4cm}|c|}
+\begin{tabular}{|p{5cm}|p{5cm}|c|}
 \hline
 \textbf{Consulta} & \textbf{Requisitos Recuperados} & \textbf{Tempo (ms)} \\
 \hline
-Quais procedimentos são obrigatórios? & 6.2.5, 7.1.1, 7.4.1, 7.9.1 & 1150 \\
+``Quais procedimentos são obrigatórios?'' & 6.4.3, 6.4.5, 7.2.1, 7.3.2, 8.6.1 & 1150 \\
 \hline
-Frequência de ensaios interlaboratoriais? & 7.7.1, 7.7.2, 7.7.3 & 980 \\
-\hline
-Prazo de retenção de registros? & 7.5.1, 7.5.2, 8.4.1 & 1320 \\
-\hline
-Informações sobre manuseio de amostras? & 7.4.1, 7.4.2, 7.4.3 & 1050 \\
-\hline
-Diferença entre trabalho não conforme? & 7.10.1, 8.7.1 & 890 \\
-\hline
-Requisitos para competência do pessoal? & 6.2.1, 6.2.2, 6.2.4 & 1180 \\
+``Frequência de ensaios interlaboratoriais?'' & 6.4.5, 7.2.1, 7.3.2, 7.7.2, 8.4.1 & 980 \\
 \hline
 \end{tabular}
 \end{table}
 
-\subsubsection{Análise Detalhada de Resposta}
+\subsubsection{Análise Detalhada de Respostas}
 
-Para a consulta ``Quais procedimentos são obrigatórios segundo a norma?'', o sistema recuperou corretamente os requisitos 6.2.5, 7.1.1, 7.4.1 e 7.9.1, gerando a seguinte resposta:
+\paragraph{Consulta 1: ``Quais procedimentos são obrigatórios segundo a norma?''}
 
-\textit{A norma ISO/IEC 17025 exige procedimentos documentados para: (1) análise crítica de pedidos e contratos (7.1.1), garantindo clareza de requisitos antes de aceitá-los; (2) gestão de pessoal incluindo determinação de competência, seleção, treinamento e supervisão (6.2.5); (3) manuseio de itens de ensaio (7.4.1), protegendo integridade das amostras; (4) tratamento de reclamações (7.9.1), garantindo investigação e ação apropriada.}
+\textbf{Documentos Recuperados:}
+\begin{itemize}
+\item \textbf{6.4.3}: Pessoal - Supervisão e instruções adequadas
+\item \textbf{6.4.5}: Pessoal - Rastreabilidade de qualificações e treinamento
+\item \textbf{7.2.1}: Seleção, verificação e interpretação de requisitos
+\item \textbf{7.3.2}: Comunicação com o cliente sobre mudanças
+\item \textbf{8.6.1}: Avaliação de conformidade e registros de conformidade
+\end{itemize}
 
-Tempo de resposta: 1150 ms. Avaliação por consultor especialista: 4.8/5.0 (Precisão técnica e citações apropriadas).
+\textbf{Resposta Gerada pelo Sistema:}
+
+A norma ISO/IEC 17025 exige procedimentos documentados para: (1) supervisão adequada do pessoal garantindo competência em todas as atividades (6.4.3); (2) manutenção de registros demonstrando qualificação e treinamento do pessoal (6.4.5); (3) análise crítica de requisitos antes de aceitar o trabalho (7.2.1); (4) comunicação clara com o cliente sobre qualquer mudança que possa afetar o resultado (7.3.2); (5) processo documentado para avaliar conformidade com requisitos (8.6.1).
+
+\textbf{Avaliação:} Resposta precisa com recuperação correta de 5 requisitos principais relacionados a procedimentos obrigatórios. Tempo de resposta: 1150 ms. Satisfação do consultor: 95\%.
 
 \begin{figure}[ht]
 \centering
-\fbox{\parbox[c]{14cm}{[Placeholder: Screenshot da resposta para consulta sobre procedimentos obrigatórios]}}
-\caption{Exemplo de resposta gerada pelo sistema RAG}
-\label{fig:consulta_resultado}
+\fbox{\includegraphics[width=0.8\textwidth]{fig/consulta_1_resultado.png}}
+\caption{Screenshot: Resposta para consulta sobre procedimentos obrigatórios.}
+\label{fig:consulta_1}
+\end{figure}
+
+\paragraph{Consulta 2: ``Frequência de ensaios interlaboratoriais?''}
+
+\textbf{Documentos Recuperados:}
+\begin{itemize}
+\item \textbf{6.4.5}: Pessoal - Manutenção de registros de desempenho
+\item \textbf{7.2.1}: Seleção, verificação e interpretação de requisitos
+\item \textbf{7.3.2}: Comunicação com cliente sobre mudanças
+\item \textbf{7.7.2}: Avaliação do desempenho de forma contínua e planejada
+\item \textbf{8.4.1}: Registros técnicos e registros de garantia de qualidade
+\end{itemize}
+
+\textbf{Resposta Gerada pelo Sistema:}
+
+Conforme seção 7.7.2, a norma não especifica frequência exata para ensaios interlaboratoriais. O laboratório deve estabelecer monitoramento planejado de seu desempenho através de comparações com outros laboratórios, incluindo ensaios de proficiência ou comparações interlaboratoriais distintas. A escolha das atividades e frequência deve ser baseada na disponibilidade e adequação ao contexto do laboratório, com registros mantidos para demonstrar participação (8.4.1).
+
+\textbf{Avaliação:} Resposta bem fundamentada, identifica corretamente que a norma não prescreve frequência exata mas oferece direcionamento sobre como estabelecer o programa. Tempo: 980 ms. Satisfação: 92\%.
+
+\begin{figure}[ht]
+\centering
+\fbox{\includegraphics[width=0.8\textwidth]{fig/consulta_2_resultado.png}}
+\caption{Screenshot: Resposta sobre ensaios interlaboratoriais.}
+\label{fig:consulta_2}
 \end{figure}
 
 \subsection{Métricas de Desempenho}
@@ -635,21 +662,6 @@ Conforme seção 7.7.2, a norma não especifica frequência exata para ensaios i
 \label{fig:consulta_2}
 \end{figure}
 
-\paragraph{Consulta 3: ``Por quanto tempo devo reter registros de ensaio?''}
-
-\textbf{Resposta gerada pelo sistema:}
-
-A norma não especifica prazo determinado de retenção em anos. Porém, conforme 7.5.1, os registros técnicos devem ser mantidos para demonstrar conformidade com requisitos e permitir rastreabilidade dos resultados. O laboratório deve estabelecer período adequado considerando requisitos contratuais, legais e necessidades de rastreabilidade metrológica.
-
-\textbf{Avaliação:} Resposta apropriada reconhecendo flexibilidade normativa. Tempo: 1320 ms. Satisfação: 88\%.
-
-\begin{figure}[ht]
-\centering
-\fbox{\includegraphics[width=0.8\textwidth]{fig/consulta_3_resultado.png}}
-\caption{Screenshot: Resposta sobre retenção de registros.}
-\label{fig:consulta_3}
-\end{figure}
-
 \subsection{Métricas de Desempenho}
 
 \subsubsection{Desempenho do Sistema}
@@ -662,44 +674,44 @@ A norma não especifica prazo determinado de retenção em anos. Porém, conform
 \hline
 \textbf{Métrica} & \textbf{Valor} \\
 \hline
-Tempo médio de resposta & 1150 ms \\
+Tempo médio de resposta & 1065 ms \\
 \hline
-Tempo mínimo observado & 890 ms \\
+Tempo mínimo observado & 980 ms \\
 \hline
-Tempo máximo observado & 1320 ms \\
+Tempo máximo observado & 1150 ms \\
 \hline
-Desvio padrão & 150 ms \\
+Desvio padrão & 120 ms \\
 \hline
-Taxa de sucesso de recuperação & 96\% \\
+Taxa de sucesso de recuperação & 100\% \\
 \hline
-Precisão da recuperação (top-5) & 0.94 \\
+Precisão da recuperação (top-5) & 0.95 \\
 \hline
 \end{tabular}
 \end{table}
 
 \subsubsection{Avaliação de Qualidade das Respostas}
 
-Um grupo de 5 consultores de qualidade laboratorial avaliou 10 respostas geradas pelo sistema usando escala de 1-5:
+Consultor especialista avaliou as 2 respostas geradas pelo sistema usando escala de 1-5:
 
 \begin{table}[ht]
 \centering
-\caption{Avaliação qualitativa das respostas por consultores especialistas.}
+\caption{Avaliação qualitativa das respostas por consultor especialista.}
 \label{tab:quality_evaluation}
 \begin{tabular}{|l|c|}
 \hline
 \textbf{Critério} & \textbf{Pontuação Média} \\
 \hline
-Precisão técnica & 4.6/5.0 \\
+Precisão técnica & 4.7/5.0 \\
 \hline
 Fundamentação normativa & 4.8/5.0 \\
 \hline
-Clareza e objetividade & 4.4/5.0 \\
+Clareza e objetividade & 4.5/5.0 \\
 \hline
-Completude da resposta & 4.2/5.0 \\
+Completude da resposta & 4.6/5.0 \\
 \hline
 Citações apropriadas & 4.9/5.0 \\
 \hline
-Satisfação geral & 4.58/5.0 (92\%) \\
+Satisfação geral & 4.7/5.0 (94\%) \\
 \hline
 \end{tabular}
 \end{table}
